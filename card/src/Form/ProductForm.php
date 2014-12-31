@@ -18,11 +18,9 @@ use Pi\Form\Form as BaseForm;
 
 class ProductForm  extends BaseForm
 {
-    protected $thumbUrl = '';
-
     public function __construct($name = null, $option = array())
     {
-        $this->category = array(0 => '');
+        $this->edit = (isset($option['edit'])) ? $option['edit'] : 0;
         $this->thumbUrl = (isset($option['thumbUrl'])) ? $option['thumbUrl'] : '';
         $this->removeUrl = (isset($option['removeUrl'])) ? $option['removeUrl'] : '';
         parent::__construct($name);
@@ -31,7 +29,7 @@ class ProductForm  extends BaseForm
     public function getInputFilter()
     {
         if (!$this->filter) {
-            $this->filter = new ProductFilter;
+            $this->filter = new ProductFilter(array('edit' => $this->edit));
         }
         return $this->filter;
     }
@@ -229,123 +227,125 @@ class ProductForm  extends BaseForm
             )
         ));
         // extra_field
-        $this->add(array(
-            'name' => 'extra_field',
-            'type' => 'fieldset',
-            'options' => array(
-                'label' => __('Fields options'),
-            ),
-        ));
-        // field_1_title
-        $this->add(array(
-            'name' => 'field_1_title',
-            'options' => array(
-                'label' => __('Field 1 title'),
-            ),
-            'attributes' => array(
-                'type' => 'text',
-                'description' => '',
-            )
-        ));
-        // field_2_title
-        $this->add(array(
-            'name' => 'field_2_title',
-            'options' => array(
-                'label' => __('Field 2 title'),
-            ),
-            'attributes' => array(
-                'type' => 'text',
-                'description' => '',
-            )
-        ));
-        // field_3_title
-        $this->add(array(
-            'name' => 'field_3_title',
-            'options' => array(
-                'label' => __('Field 3 title'),
-            ),
-            'attributes' => array(
-                'type' => 'text',
-                'description' => '',
-            )
-        ));
-        // field_4_title
-        $this->add(array(
-            'name' => 'field_4_title',
-            'options' => array(
-                'label' => __('Field 4 title'),
-            ),
-            'attributes' => array(
-                'type' => 'text',
-                'description' => '',
-            )
-        ));
-        // field_5_title
-        $this->add(array(
-            'name' => 'field_5_title',
-            'options' => array(
-                'label' => __('Field 5 title'),
-            ),
-            'attributes' => array(
-                'type' => 'text',
-                'description' => '',
-            )
-        ));
-        // field_6_title
-        $this->add(array(
-            'name' => 'field_6_title',
-            'options' => array(
-                'label' => __('Field 6 title'),
-            ),
-            'attributes' => array(
-                'type' => 'text',
-                'description' => '',
-            )
-        ));
-        // field_7_title
-        $this->add(array(
-            'name' => 'field_7_title',
-            'options' => array(
-                'label' => __('Field 7 title'),
-            ),
-            'attributes' => array(
-                'type' => 'text',
-                'description' => '',
-            )
-        ));
-        // field_8_title
-        $this->add(array(
-            'name' => 'field_8_title',
-            'options' => array(
-                'label' => __('Field 8 title'),
-            ),
-            'attributes' => array(
-                'type' => 'text',
-                'description' => '',
-            )
-        ));
-        // field_9_title
-        $this->add(array(
-            'name' => 'field_9_title',
-            'options' => array(
-                'label' => __('Field 9 title'),
-            ),
-            'attributes' => array(
-                'type' => 'text',
-                'description' => '',
-            )
-        ));
-        // field_10_title
-        $this->add(array(
-            'name' => 'field_10_title',
-            'options' => array(
-                'label' => __('Field 10 title'),
-            ),
-            'attributes' => array(
-                'type' => 'text',
-                'description' => '',
-            )
-        ));
+        if (!isset($this->edit) || $this->edit == 0) {
+            $this->add(array(
+                'name' => 'extra_field',
+                'type' => 'fieldset',
+                'options' => array(
+                    'label' => __('Fields options'),
+                ),
+            ));
+            // field_1_title
+            $this->add(array(
+                'name' => 'field_1_title',
+                'options' => array(
+                    'label' => __('Field 1 title'),
+                ),
+                'attributes' => array(
+                    'type' => 'text',
+                    'description' => '',
+                )
+            ));
+            // field_2_title
+            $this->add(array(
+                'name' => 'field_2_title',
+                'options' => array(
+                    'label' => __('Field 2 title'),
+                ),
+                'attributes' => array(
+                    'type' => 'text',
+                    'description' => '',
+                )
+            ));
+            // field_3_title
+            $this->add(array(
+                'name' => 'field_3_title',
+                'options' => array(
+                    'label' => __('Field 3 title'),
+                ),
+                'attributes' => array(
+                    'type' => 'text',
+                    'description' => '',
+                )
+            ));
+            // field_4_title
+            $this->add(array(
+                'name' => 'field_4_title',
+                'options' => array(
+                    'label' => __('Field 4 title'),
+                ),
+                'attributes' => array(
+                    'type' => 'text',
+                    'description' => '',
+                )
+            ));
+            // field_5_title
+            $this->add(array(
+                'name' => 'field_5_title',
+                'options' => array(
+                    'label' => __('Field 5 title'),
+                ),
+                'attributes' => array(
+                    'type' => 'text',
+                    'description' => '',
+                )
+            ));
+            // field_6_title
+            $this->add(array(
+                'name' => 'field_6_title',
+                'options' => array(
+                    'label' => __('Field 6 title'),
+                ),
+                'attributes' => array(
+                    'type' => 'text',
+                    'description' => '',
+                )
+            ));
+            // field_7_title
+            $this->add(array(
+                'name' => 'field_7_title',
+                'options' => array(
+                    'label' => __('Field 7 title'),
+                ),
+                'attributes' => array(
+                    'type' => 'text',
+                    'description' => '',
+                )
+            ));
+            // field_8_title
+            $this->add(array(
+                'name' => 'field_8_title',
+                'options' => array(
+                    'label' => __('Field 8 title'),
+                ),
+                'attributes' => array(
+                    'type' => 'text',
+                    'description' => '',
+                )
+            ));
+            // field_9_title
+            $this->add(array(
+                'name' => 'field_9_title',
+                'options' => array(
+                    'label' => __('Field 9 title'),
+                ),
+                'attributes' => array(
+                    'type' => 'text',
+                    'description' => '',
+                )
+            ));
+            // field_10_title
+            $this->add(array(
+                'name' => 'field_10_title',
+                'options' => array(
+                    'label' => __('Field 10 title'),
+                ),
+                'attributes' => array(
+                    'type' => 'text',
+                    'description' => '',
+                )
+            ));
+        }
         // Save
         $this->add(array(
             'name' => 'submit',

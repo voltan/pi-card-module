@@ -18,7 +18,7 @@ use Zend\InputFilter\InputFilter;
 
 class ProductFilter extends InputFilter
 {
-    public function __construct()
+    public function __construct($option)
     {
         // id
         $this->add(array(
@@ -126,105 +126,108 @@ class ProductFilter extends InputFilter
                 ),
             ),
         ));
-        // field_1_title
-        $this->add(array(
-            'name' => 'field_1_title',
-            'required' => false,
-            'filters' => array(
-                array(
-                    'name' => 'StringTrim',
+        // fields
+        if (!isset($option['edit']) || $option['edit'] == 0) {
+            // field_1_title
+            $this->add(array(
+                'name' => 'field_1_title',
+                'required' => false,
+                'filters' => array(
+                    array(
+                        'name' => 'StringTrim',
+                    ),
                 ),
-            ),
-        ));
-        // field_2_title
-        $this->add(array(
-            'name' => 'field_2_title',
-            'required' => false,
-            'filters' => array(
-                array(
+            ));
+            // field_2_title
+            $this->add(array(
+                'name' => 'field_2_title',
+                'required' => false,
+                'filters' => array(
+                    array(
                     'name' => 'StringTrim',
+                    ),
                 ),
-            ),
-        ));
-        // field_3_title
-        $this->add(array(
-            'name' => 'field_3_title',
-            'required' => false,
-            'filters' => array(
-                array(
-                    'name' => 'StringTrim',
+            ));
+            // field_3_title
+            $this->add(array(
+                'name' => 'field_3_title',
+                'required' => false,
+                'filters' => array(
+                    array(
+                        'name' => 'StringTrim',
+                    ),
                 ),
-            ),
-        ));
-        // field_4_title
-        $this->add(array(
-            'name' => 'field_4_title',
-            'required' => false,
-            'filters' => array(
-                array(
-                    'name' => 'StringTrim',
+            ));
+            // field_4_title
+            $this->add(array(
+                'name' => 'field_4_title',
+                'required' => false,
+                'filters' => array(
+                    array(
+                        'name' => 'StringTrim',
+                    ),
                 ),
-            ),
-        ));
-        // field_5_title
-        $this->add(array(
-            'name' => 'field_5_title',
-            'required' => false,
-            'filters' => array(
-                array(
-                    'name' => 'StringTrim',
+            ));
+            // field_5_title
+            $this->add(array(
+                'name' => 'field_5_title',
+                'required' => false,
+                'filters' => array(
+                    array(
+                        'name' => 'StringTrim',
+                    ),
                 ),
-            ),
-        ));
-        // field_6_title
-        $this->add(array(
-            'name' => 'field_6_title',
-            'required' => false,
-            'filters' => array(
-                array(
-                    'name' => 'StringTrim',
+            ));
+            // field_6_title
+            $this->add(array(
+                'name' => 'field_6_title',
+                'required' => false,
+                'filters' => array(
+                    array(
+                        'name' => 'StringTrim',
+                    ),
                 ),
-            ),
-        ));
-        // field_7_title
-        $this->add(array(
-            'name' => 'field_7_title',
-            'required' => false,
-            'filters' => array(
-                array(
-                    'name' => 'StringTrim',
+            ));
+            // field_7_title
+            $this->add(array(
+                'name' => 'field_7_title',
+                'required' => false,
+                'filters' => array(
+                    array(
+                        'name' => 'StringTrim',
+                    ),
                 ),
-            ),
-        ));
-        // field_8_title
-        $this->add(array(
-            'name' => 'field_8_title',
-            'required' => false,
-            'filters' => array(
-                array(
-                    'name' => 'StringTrim',
+            ));
+            // field_8_title
+            $this->add(array(
+                'name' => 'field_8_title',
+                'required' => false,
+                'filters' => array(
+                    array(
+                        'name' => 'StringTrim',
+                    ),
                 ),
-            ),
-        ));
-        // field_9_title
-        $this->add(array(
-            'name' => 'field_9_title',
-            'required' => false,
-            'filters' => array(
-                array(
-                    'name' => 'StringTrim',
+            ));
+            // field_9_title
+            $this->add(array(
+                'name' => 'field_9_title',
+                'required' => false,
+                'filters' => array(
+                    array(
+                        'name' => 'StringTrim',
+                    ),
                 ),
-            ),
-        ));
-        // field_10_title
-        $this->add(array(
-            'name' => 'field_10_title',
-            'required' => false,
-            'filters' => array(
-                array(
-                    'name' => 'StringTrim',
+            ));
+            // field_10_title
+            $this->add(array(
+                'name' => 'field_10_title',
+                'required' => false,
+                'filters' => array(
+                    array(
+                        'name' => 'StringTrim',
+                    ),
                 ),
-            ),
-        ));
+            ));
+        }
     }
 }    	

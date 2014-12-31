@@ -106,6 +106,7 @@ class ProductController extends ActionController
         // Find Product
         if ($id) {
             $product = $this->getModel('product')->find($id)->toArray();
+            $option['edit'] = 1;
             if ($product['image']) {
                 $thumbUrl = sprintf('upload/%s/thumb/%s/%s', $this->config('image_path'), $product['path'], $product['image']);
                 $option['thumbUrl'] = Pi::url($thumbUrl);
@@ -123,7 +124,7 @@ class ProductController extends ActionController
             $filter = new Filter\Slug;
             $data['slug'] = $filter($slug);
             // Form filter
-            $form->setInputFilter(new ProductFilter);
+            $form->setInputFilter(new ProductFilter($option));
             $form->setData($data);
             if ($form->isValid()) {
             	$values = $form->getData();
