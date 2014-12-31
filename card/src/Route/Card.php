@@ -27,8 +27,7 @@ class Card extends Standard
     );
 
     protected $controllerList = array(
-        'category', 'checkout', 'customer', 'index', 'product'
-
+        'checkout'
     );
 
     /**

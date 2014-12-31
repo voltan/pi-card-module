@@ -189,7 +189,7 @@ class ProductController extends ActionController
                 $row->assign($values);
                 $row->save();
                 // Add / Edit sitemap
-                if (Pi::service('module')->isActive('sitemap')) {
+                /* if (Pi::service('module')->isActive('sitemap')) {
                     // Set loc
                     $loc = Pi::url($this->url('card', array(
                         'module'      => $module, 
@@ -198,7 +198,7 @@ class ProductController extends ActionController
                     )));
                     // Update sitemap
                     Pi::api('sitemap', 'sitemap')->singleLink($loc, $row->status, $module, 'product', $row->id);         
-                }
+                } */
                 // Check it save or not
                 $message = __('Product data saved successfully.');
                 $this->jump(array('action' => 'index'), $message);

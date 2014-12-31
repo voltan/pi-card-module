@@ -18,7 +18,7 @@ use Zend\Json\Json;
 
 /*
  * Pi::api('category', 'card')->getCategory($parameter, $type = 'id');
- * Pi::api('category', 'card')->categoryList($parent);
+ * Pi::api('category', 'card')->categoryList();
  * Pi::api('category', 'card')->categoryCount();
  * Pi::api('category', 'card')->canonizeCategory($category);
  * Pi::api('category', 'card')->sitemap();
@@ -33,7 +33,7 @@ class Category extends AbstractApi
         return $category;
     }  
 
-    public function categoryList($parent = null)
+    public function categoryList()
     {
         // Get config
         $config = Pi::service('registry')->config->read($this->getModule());
@@ -43,18 +43,7 @@ class Category extends AbstractApi
         $select = Pi::model('category', $this->getModule())->select()->where($where)->order($order);
         $rowset = Pi::model('category', $this->getModule())->selectWith($select);
         foreach ($rowset as $row) {
-            $return[$row->id] = $row->toArray();
-            $return[$row->id]['url'] = Pi::url(Pi::service('url')->assemble('card', array(
-                'module'        => $this->getModule(),
-                'controller'    => 'category',
-                'slug'          => $return[$row->id]['slug'],
-            )));
-            $return[$row->id]['thumbUrl'] = Pi::url(
-                sprintf('upload/%s/thumb/%s/%s', 
-                    $config['image_path'], 
-                    $return[$row->id]['path'], 
-                    $return[$row->id]['image']
-                ));
+            $return[$row->id] = $this->canonizeCategory($row);
         }
         return $return;
     }  
@@ -83,11 +72,11 @@ class Category extends AbstractApi
         $category['time_create_view'] = _date($category['time_create']);
         $category['time_update_view'] = _date($category['time_update']);
         // Set item url
-        $category['categoryUrl'] = Pi::url(Pi::service('url')->assemble('card', array(
+        /* $category['categoryUrl'] = Pi::url(Pi::service('url')->assemble('card', array(
             'module'        => $this->getModule(),
             'controller'    => 'category',
             'slug'          => $category['slug'],
-        )));
+        ))); */
         // Set image url
         if ($category['image']) {
             // Set image original url
@@ -100,13 +89,6 @@ class Category extends AbstractApi
             // Set image large url
             $category['largeUrl'] = Pi::url(
                 sprintf('upload/%s/large/%s/%s', 
-                    $config['image_path'], 
-                    $category['path'], 
-                    $category['image']
-                ));
-            // Set image item url
-            $category['itemimageUrl'] = Pi::url(
-                sprintf('upload/%s/item/%s/%s', 
                     $config['image_path'], 
                     $category['path'], 
                     $category['image']
@@ -130,7 +112,7 @@ class Category extends AbstractApi
         return $category; 
     }
 
-    public function sitemap()
+    /* public function sitemap()
     {
         if (Pi::service('module')->isActive('sitemap')) {
             // Remove old links
@@ -150,5 +132,5 @@ class Category extends AbstractApi
                 Pi::api('sitemap', 'sitemap')->groupLink($loc, $row->status, $this->getModule(), 'category', $row->id);
             }
         }
-    }
+    } */
 }

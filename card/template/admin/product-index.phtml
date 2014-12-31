@@ -24,7 +24,6 @@
 				<?php echo $this->escape($product['title']); ?>
 			</td>
 			<td>
-				<a class="btn btn-primary" title="<?php _e('View'); ?>" href="<?php echo $product['productUrl']; ?>"><i class="fa fa-eye"></i> <?php _e('View'); ?></a>
 				<a class="btn btn-primary" title="<?php _e('Edit'); ?>" href="<?php echo $this->url('', array('action' => 'update', 'id' => $product['id'])); ?>"><i class="fa fa-edit"></i> <?php _e('Edit'); ?></a>
 				<a class="btn btn-primary" title="<?php _e('View detail'); ?>" href="<?php echo $this->url('', array('controller' => 'detail', 'action' => 'view', 'product' => $product['id'])); ?>"><i class="fa fa-eye"></i> <?php _e('View detail'); ?></a>
 				<a class="btn btn-primary" title="<?php _e('Add detail'); ?>" href="<?php echo $this->url('', array('controller' => 'detail', 'action' => 'add', 'product' => $product['id'])); ?>"><i class="fa fa-plus"></i> <?php _e('Add detail'); ?></a>

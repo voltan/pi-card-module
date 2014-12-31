@@ -43,15 +43,6 @@ return array(
             'controller'  => 'product',
             'action'      => 'index',
         ),
-        'detail' => array(
-            'label'       => _a('Detail'),
-            'permission'  => array(
-                'resource'  => 'detail',
-            ),
-            'route'       => 'admin',
-            'controller'  => 'detail',
-            'action'      => 'index',
-        ),
         'category' => array(
             'label'       => _a('Category'),
             'permission'  => array(

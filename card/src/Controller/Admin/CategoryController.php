@@ -179,7 +179,7 @@ class CategoryController extends ActionController
                 $row->assign($values);
                 $row->save();
                 // Add / Edit sitemap
-                if (Pi::service('module')->isActive('sitemap')) {
+                /* if (Pi::service('module')->isActive('sitemap')) {
                     // Set loc
                     $loc = Pi::url($this->url('card', array(
                         'module'      => $module, 
@@ -188,7 +188,7 @@ class CategoryController extends ActionController
                     )));
                     // Update sitemap
                     Pi::api('sitemap', 'sitemap')->singleLink($loc, $row->status, $module, 'category', $row->id);         
-                }
+                } */
                 $message = __('Category data saved successfully.');
                 $this->jump(array('action' => 'index'), $message);
             } else {

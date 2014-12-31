@@ -18,11 +18,10 @@ use Zend\Json\Json;
 
 /*
  * Pi::api('product', 'card')->getProduct($parameter, $type);
- * Pi::api('product', 'card')->getListFromId($id);
+ * Pi::api('product', 'card')->productList($category);
  * Pi::api('product', 'card')->updateStock($id);
  * Pi::api('product', 'card')->viewPrice($price);
  * Pi::api('product', 'card')->canonizeProduct($product, $categoryList);
- * Pi::api('product', 'card')->sitemap();
  */
 
 class Product extends AbstractApi
@@ -35,14 +34,14 @@ class Product extends AbstractApi
         return $product;
     }
 
-    public function getListFromId($id)
+    public function productList($category)
     {
         $list = array();
-        $where = array('id' => $id, 'status' => 1);
+        $where = array('category' => $category, 'status' => 1);
         $select = Pi::model('product', $this->getModule())->select()->where($where);
         $rowset = Pi::model('product', $this->getModule())->selectWith($select);
         foreach ($rowset as $row) {
-            $list[$row->id] = $this->canonizeProduct($row);
+            $list[$row->category][$row->id] = $this->canonizeProduct($row);
         }
         return $list;
     }
@@ -95,7 +94,7 @@ class Product extends AbstractApi
         $product['time_create_view'] = _date($product['time_create']);
         $product['time_update_view'] = _date($product['time_update']);
         // Set product url
-        $product['productUrl'] = Pi::url(Pi::service('url')->assemble('card', array(
+        /* $product['productUrl'] = Pi::url(Pi::service('url')->assemble('card', array(
             'module'        => $this->getModule(),
             'controller'    => 'product',
             'slug'          => $product['slug'],
@@ -106,9 +105,9 @@ class Product extends AbstractApi
             'controller'    => 'checkout',
             'action'        => 'add',
             'slug'          => $product['slug'],
-        )));
+        ))); */
         // Set category information
-        $product['categoryInfo'] = Pi::api('category', 'card')->getCategory($product['category']);
+        //$product['categoryInfo'] = Pi::api('category', 'card')->getCategory($product['category']);
         // Set price
         $product['price_view'] = $this->viewPrice($product['price']);
         // Set marketable
@@ -148,7 +147,7 @@ class Product extends AbstractApi
         return $product; 
     }
 
-    public function sitemap()
+    /* public function sitemap()
     {
         if (Pi::service('module')->isActive('sitemap')) {
             // Remove old links
@@ -168,5 +167,5 @@ class Product extends AbstractApi
                 Pi::api('sitemap', 'sitemap')->groupLink($loc, $row->status, $this->getModule(), 'product', $row->id);
             }
         }
-    }
+    } */
 }	

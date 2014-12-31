@@ -15,7 +15,7 @@ return array(
     'meta'         => array(
         'title'         => _a('Card'),
         'description'   => _a('Sale card informations'),
-        'version'       => '0.0.1',
+        'version'       => '0.0.3',
         'license'       => 'New BSD',
         'logo'          => 'image/logo.png',
         'readme'        => 'docs/readme.txt',
@@ -34,6 +34,7 @@ return array(
         'database'      => 'database.php',
         'config'        => 'config.php',
         'permission'    => 'permission.php',
+        'block'         => 'block.php',
         'page'          => 'page.php',
         'navigation'    => 'navigation.php',
         'route'         => 'route.php',
