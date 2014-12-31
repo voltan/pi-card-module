@@ -47,6 +47,12 @@ return array(
                 //'admin',
             ),
         ),
+        'category'       => array(
+            'title'         => _a('Category'),
+            'access'        => array(
+                //'admin',
+            ),
+        ),
         'order'       => array(
             'title'         => _a('Orders'),
             'access'        => array(

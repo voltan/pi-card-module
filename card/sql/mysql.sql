@@ -1,14 +1,20 @@
 CREATE TABLE `{product}` (
     `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+    `category` int(10) unsigned NOT NULL default '0',
     `title` varchar(255) NOT NULL default '',
     `slug` varchar(255) NOT NULL default '',
-    `summary` text,
+    `text_description` text,
+    `seo_title` varchar(255) NOT NULL default '',
+    `seo_keywords` varchar(255) NOT NULL default '',
+    `seo_description` varchar(255) NOT NULL default '',
+    `uid` int(10) unsigned NOT NULL default '0',
     `image` varchar(255) NOT NULL default '',
     `path` varchar(16) NOT NULL default '',
     `order` int(10) unsigned NOT NULL default '0',
     `hits` int(10) unsigned NOT NULL default '0',
     `status` tinyint(1) unsigned NOT NULL default '1',
     `time_create` int(10) unsigned NOT NULL default '0',
+    `time_update` int(10) unsigned NOT NULL default '0',
     `sales` int(10) unsigned NOT NULL default '0',
     `stock` int(10) unsigned NOT NULL default '0',
     `price` decimal(16,2) NOT NULL default '0.00',
@@ -60,6 +66,27 @@ CREATE TABLE `{detail}` (
     KEY `time_create` (`time_create`),
     KEY `product_sales_is` (`product`, `sales_is`),
     KEY `uid_sales_is` (`uid`, `sales_is`)
+);
+
+CREATE TABLE `{category}` (
+    `id` int (10) unsigned NOT NULL auto_increment,
+    `title` varchar(255) NOT NULL default '',
+    `slug` varchar(255) NOT NULL default '',
+    `image` varchar(255) NOT NULL default '',
+    `path` varchar(16) NOT NULL default '',
+    `text_description` text,
+    `seo_title` varchar(255) NOT NULL default '',
+    `seo_keywords` varchar(255) NOT NULL default '',
+    `seo_description` varchar(255) NOT NULL default '',
+    `time_create` int(10) unsigned NOT NULL default '0',
+    `time_update` int(10) unsigned NOT NULL default '0',
+    `status` tinyint(1) unsigned NOT NULL default '1',
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `slug` (`slug`),
+    KEY `title` (`title`),
+    KEY `time_create` (`time_create`),
+    KEY `status` (`status`),
+    KEY `category_list` (`status`, `id`)
 );
 
 CREATE TABLE `{order}` (

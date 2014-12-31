@@ -17,60 +17,57 @@ use Pi\Filter;
 use Pi\Mvc\Controller\ActionController;
 use Pi\Paginator\Paginator;
 use Pi\File\Transfer\Upload;
-use Module\Card\Form\ProductForm;
-use Module\Card\Form\ProductFilter;
+use Module\Card\Form\CategoryForm;
+use Module\Card\Form\CategoryFilter;
 
-class ProductController extends ActionController
+class CategoryController extends ActionController
 {
     /**
-     * Product Image Prefix
+     * Image Prefix
      */
-    protected $ImageProductPrefix = 'product_';
+    protected $ImageCategoryPrefix = 'category_';
 
     /**
-     * Product Columns
+     * Category Columns
      */
-    protected $productColumns = array(
-    	'id', 'category', 'title', 'slug', 'text_description', 'image', 'path', 'order', 'hits', 'status', 
-    	'time_create', 'time_update', 'sales', 'stock', 'price', 'price_title', 'field_1_title', 
-    	'field_2_title', 'field_3_title', 'field_4_title', 'field_5_title', 'field_6_title', 
-    	'field_7_title', 'field_8_title', 'field_9_title', 'field_10_title', 'seo_title', 'seo_keywords', 'seo_description'
+    protected $categoryColumns = array(
+    	'id', 'title', 'slug', 'image', 'path', 'text_description',
+    	'time_create', 'time_update', 'seo_title', 'seo_keywords', 'seo_description', 'status'
     );
 
+    /**
+     * index Action
+     */
 	public function indexAction()
     {
         // Get page
         $page = $this->params('page', 1);
         $module = $this->params('module');
-        // Set info
-        $offset = (int)($page - 1) * $this->config('admin_perpage');
-        $order = array('time_create DESC', 'id DESC');
-        $limit = intval($this->config('admin_perpage'));
+        // Get info
         $list = array();
-        // Set info
-        $column = array('id', 'title', 'slug', 'status', 'time_create', 'time_update');
-        // Get list of product
-        $select = $this->getModel('product')->select()->columns($column)->order($order);
-        $rowset = $this->getModel('product')->selectWith($select);
+        $columns = array('id', 'title', 'slug', 'status');
+        $order = array('id DESC', 'time_create DESC');
+        $offset = (int)($page - 1) * $this->config('admin_perpage');
+        $limit = intval($this->config('admin_perpage'));
+        $select = $this->getModel('category')->select()->columns($columns)->order($order)->offset($offset)->limit($limit);
+        $rowset = $this->getModel('category')->selectWith($select);
         // Make list
         foreach ($rowset as $row) {
-            $product[$row->id] = $row->toArray();
-            $product[$row->id]['time_create_view'] = _date($product[$row->id]['time_create']);
-            $product[$row->id]['time_update_view'] = _date($product[$row->id]['time_update']);
-            $product[$row->id]['productUrl'] = Pi::url($this->url('card', array(
+            $list[$row->id] = $row->toArray();
+            $list[$row->id]['url'] = Pi::url($this->url('card', array(
                 'module'        => $module,
-                'controller'    => 'product',
-                'slug'          => $product[$row->id]['slug'],
+                'controller'    => 'category',
+                'slug'          => $list[$row->id]['slug'],
             )));
         }
         // Go to update page if empty
-        if (empty($product) && empty($status)) {
+        if (empty($list)) {
             return $this->redirect()->toRoute('', array('action' => 'update'));
         }
         // Set paginator
-        $countLink = array('count' => new \Zend\Db\Sql\Predicate\Expression('count(*)'));
-        $select = $this->getModel('product')->select()->columns($countLink);
-        $count = $this->getModel('product')->selectWith($select)->current()->count;
+        $count = array('count' => new \Zend\Db\Sql\Predicate\Expression('count(*)'));
+        $select = $this->getModel('category')->select()->columns($count);
+        $count = $this->getModel('category')->selectWith($select)->current()->count;
         $paginator = Paginator::factory(intval($count));
         $paginator->setItemCountPerPage($this->config('admin_perpage'));
         $paginator->setCurrentPageNumber($page);
@@ -79,41 +76,36 @@ class ProductController extends ActionController
             'route'     => $this->getEvent()->getRouteMatch()->getMatchedRouteName(),
             'params'    => array_filter(array(
                 'module'        => $this->getModule(),
-                'controller'    => 'product',
+                'controller'    => 'category',
                 'action'        => 'index',
             )),
         ));
         // Set view
-        $this->view()->setTemplate('product-index');
-        $this->view()->assign('list', $product);
+        $this->view()->setTemplate('category-index');
+        $this->view()->assign('list', $list);
         $this->view()->assign('paginator', $paginator);
     }
 
+    /**
+     * update Action
+     */
     public function updateAction()
     {
-        // check category
-        $categoryCount = Pi::api('category', 'card')->categoryCount();
-        if (!$categoryCount) {
-            return $this->redirect()->toRoute('', array(
-                'controller'  => 'category',
-                'action'      => 'update'
-            ));
-        }
         // Get id
         $id = $this->params('id');
         $module = $this->params('module');
         $option = array();
-        // Find Product
+        // Find category
         if ($id) {
-            $product = $this->getModel('product')->find($id)->toArray();
-            if ($product['image']) {
-                $thumbUrl = sprintf('upload/%s/thumb/%s/%s', $this->config('image_path'), $product['path'], $product['image']);
-                $option['thumbUrl'] = Pi::url($thumbUrl);
-                $option['removeUrl'] = $this->url('', array('action' => 'remove', 'id' => $product['id']));
+            $category = $this->getModel('category')->find($id)->toArray();
+            if ($category['image']) {
+                $category['thumbUrl'] = sprintf('upload/%s/thumb/%s/%s', $this->config('image_path'), $category['path'], $category['image']);
+                $option['thumbUrl'] = Pi::url($category['thumbUrl']);
+                $option['removeUrl'] = $this->url('', array('action' => 'remove', 'id' => $category['id']));
             }
         }
         // Set form
-        $form = new ProductForm('product', $option);
+        $form = new CategoryForm('category', $option);
         $form->setAttribute('enctype', 'multipart/form-data');
         if ($this->request->isPost()) {
         	$data = $this->request->getPost();
@@ -123,7 +115,7 @@ class ProductController extends ActionController
             $filter = new Filter\Slug;
             $data['slug'] = $filter($slug);
             // Form filter
-            $form->setInputFilter(new ProductFilter);
+            $form->setInputFilter(new CategoryFilter);
             $form->setData($data);
             if ($form->isValid()) {
             	$values = $form->getData();
@@ -133,7 +125,7 @@ class ProductController extends ActionController
                     $values['path'] = sprintf('%s/%s', date('Y'), date('m'));
                     $originalPath = Pi::path(sprintf('upload/%s/original/%s', $this->config('image_path'), $values['path']));
                     // Image name
-                    $imageName = Pi::api('image', 'card')->rename($file['image']['name'], $this->ImageProductPrefix, $values['path']);
+                    $imageName = Pi::api('image', 'card')->rename($file['image']['name'], $this->ImageCategoryPrefix, $values['path']);
                     // Upload
                     $uploader = new Upload;
                     $uploader->setDestination($originalPath);
@@ -152,9 +144,9 @@ class ProductController extends ActionController
                 } elseif (!isset($values['image'])) {
                     $values['image'] = '';  
                 }
-            	// Set just product fields
+            	// Set just category fields
             	foreach (array_keys($values) as $key) {
-                    if (!in_array($key, $this->productColumns)) {
+                    if (!in_array($key, $this->categoryColumns)) {
                         unset($values[$key]);
                     }
                 }
@@ -176,14 +168,13 @@ class ProductController extends ActionController
                 // Set time
                 if (empty($values['id'])) {
                     $values['time_create'] = time();
-                    $values['uid'] = Pi::user()->getId();
                 }
                 $values['time_update'] = time();
                 // Save values
                 if (!empty($values['id'])) {
-                    $row = $this->getModel('product')->find($values['id']);
+                    $row = $this->getModel('category')->find($values['id']);
                 } else {
-                    $row = $this->getModel('product')->createRow();
+                    $row = $this->getModel('category')->createRow();
                 }
                 $row->assign($values);
                 $row->save();
@@ -192,59 +183,57 @@ class ProductController extends ActionController
                     // Set loc
                     $loc = Pi::url($this->url('card', array(
                         'module'      => $module, 
-                        'controller'  => 'product', 
+                        'controller'  => 'category', 
                         'slug'        => $values['slug']
                     )));
                     // Update sitemap
-                    Pi::api('sitemap', 'sitemap')->singleLink($loc, $row->status, $module, 'product', $row->id);         
+                    Pi::api('sitemap', 'sitemap')->singleLink($loc, $row->status, $module, 'category', $row->id);         
                 }
-                // Check it save or not
-                $message = __('Product data saved successfully.');
+                $message = __('Category data saved successfully.');
                 $this->jump(array('action' => 'index'), $message);
             } else {
                 $message = __('Invalid data, please check and re-submit.');
             }	
         } else {
             if ($id) {
-                // Set data 
-                $form->setData($product);
+                $form->setData($category);
             }
-        }   
+        }
         // Set view
-        $this->view()->setTemplate('product-update');
+        $this->view()->setTemplate('category-update');
         $this->view()->assign('form', $form);
-        $this->view()->assign('title', __('Add product'));
+        $this->view()->assign('title', __('Add category'));
     }
 
     public function removeAction()
     {
         // Get id and status
         $id = $this->params('id');
-        // set product
-        $product = $this->getModel('product')->find($id);
+        // set category
+        $category = $this->getModel('category')->find($id);
         // Check
-        if ($product && !empty($id)) {
+        if ($category && !empty($id)) {
             // remove file
             /* $files = array(
-                Pi::path(sprintf('upload/%s/original/%s/%s', $this->config('image_path'), $product->path, $product->image)),
-                Pi::path(sprintf('upload/%s/large/%s/%s', $this->config('image_path'), $product->path, $product->image)),
-                Pi::path(sprintf('upload/%s/medium/%s/%s', $this->config('image_path'), $product->path, $product->image)),
-                Pi::path(sprintf('upload/%s/thumb/%s/%s', $this->config('image_path'), $product->path, $product->image)),
+                Pi::path(sprintf('upload/%s/original/%s/%s', $this->config('image_path'), $category->path, $category->image)),
+                Pi::path(sprintf('upload/%s/large/%s/%s', $this->config('image_path'), $category->path, $category->image)),
+                Pi::path(sprintf('upload/%s/medium/%s/%s', $this->config('image_path'), $category->path, $category->image)),
+                Pi::path(sprintf('upload/%s/thumb/%s/%s', $this->config('image_path'), $category->path, $category->image)),
             );
             Pi::service('file')->remove($files); */
             // clear DB
-            $product->image = '';
-            $product->path = '';
+            $category->image = '';
+            $category->path = '';
             // Save
-            if ($product->save()) {
-                $message = sprintf(__('Image of %s removed'), $product->title);
+            if ($category->save()) {
+                $message = sprintf(__('Image of %s removed'), $category->title);
                 $status = 1;
             } else {
                 $message = __('Image not remove');
                 $status = 0;
             }
         } else {
-            $message = __('Please select product');
+            $message = __('Please select category');
             $status = 0;
         }
         return array(

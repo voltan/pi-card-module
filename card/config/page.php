@@ -24,6 +24,11 @@ return array(
             'permission'    => 'detail',
         ),
         array(
+            'title'         => _a('Category'),
+            'controller'    => 'category',
+            'permission'    => 'category',
+        ),
+        array(
             'label'         => _a('Orders'),
             'controller'    => 'order',
             'permission'    => 'order',
@@ -45,6 +50,12 @@ return array(
         array(
             'title'         => _a('Single product'),
             'controller'    => 'product',
+            'permission'    => 'public',
+            'block'         => 1,
+        ),
+        array(
+            'title'         => _a('Category'),
+            'controller'    => 'category',
             'permission'    => 'public',
             'block'         => 1,
         ),

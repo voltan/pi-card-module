@@ -52,8 +52,17 @@ return array(
             'controller'  => 'detail',
             'action'      => 'index',
         ),
+        'category' => array(
+            'label'       => _a('Category'),
+            'permission'  => array(
+                'resource'  => 'category',
+            ),
+            'route'       => 'admin',
+            'controller'  => 'category',
+            'action'      => 'index',
+        ),
         'order' => array(
-            'label'       => _a('Order'),
+            'label'       => _a('Orders'),
             'permission'  => array(
                 'resource'  => 'order',
             ),
