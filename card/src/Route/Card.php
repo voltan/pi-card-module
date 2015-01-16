@@ -49,7 +49,20 @@ class Card extends Standard
             $matches['controller'] = $this->decode($parts[0]);
         }
 
-       
+        // Make Match
+        if (isset($matches['controller']) && !empty($parts[1])) {
+            switch ($matches['controller']) {
+                case 'checkout':
+                    if ($parts[1] == 'add') {
+                        $matches['action'] = 'add';
+                        $matches['id'] = $this->decode($parts[2]);
+                        $matches['number'] = $this->decode($parts[3]);
+                    } elseif($parts[1] == 'finish') {
+                        $matches['action'] = 'finish';
+                    } 
+                    break; 
+            }    
+        } 
 
         return $matches;
     }
@@ -96,11 +109,14 @@ class Card extends Standard
             $url['slug'] = $mergedParams['slug'];
         }
 
-        // Set if controller is user
-        if ($mergedParams['controller'] == 'user') {
-            if ($mergedParams['action'] == 'order') {
-                $url['id'] = $mergedParams['id'];
-            }   
+        // Set id
+        if (!empty($mergedParams['id'])) {
+            $url['id'] = $mergedParams['id'];
+        }
+
+        // Set number
+        if (!empty($mergedParams['number'])) {
+            $url['number'] = $mergedParams['number'];
         }
 
         // Make url

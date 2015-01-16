@@ -11,28 +11,6 @@
  * @author Hossein Azizabadi <azizabadi@faragostaresh.com>
  */
 return array(
-    'front'   => array(
-        'index' => array(
-            'label'         => _a('Index'),
-            'permission'    => array(
-                'resource'  => 'public',
-            ),
-            'route'         => 'card',
-            'module'        => 'card',
-            'controller'    => 'index',
-            'action'        => 'index',
-        ),
-        'customer' => array(
-            'label'         => _a('My Orders'),
-            'permission'    => array(
-                'resource'  => 'customer',
-            ),
-            'route'         => 'card',
-            'module'        => 'card',
-            'controller'    => 'customer',
-            'action'        => 'index',
-        ),
-    ),
     'admin' => array(
         'product' => array(
             'label'       => _a('Product'),
@@ -59,15 +37,6 @@ return array(
             ),
             'route'       => 'admin',
             'controller'  => 'order',
-            'action'      => 'index',
-        ),
-        'customer' => array(
-            'label'       => _a('Customer'),
-            'permission'  => array(
-                'resource'  => 'customer',
-            ),
-            'route'       => 'admin',
-            'controller'  => 'customer',
             'action'      => 'index',
         ),
     ),

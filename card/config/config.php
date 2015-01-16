@@ -20,6 +20,10 @@ return array(
             'title'  => _a('Image'),
             'name'   => 'image'
         ),
+        array(
+            'title'  => _a('Order'),
+            'name'   => 'order'
+        ),
     ),
     'item' => array(
         // Admin
@@ -153,6 +157,79 @@ return array(
             'filter'       => 'text',
             'value'        => 'bottom-right',
             'category'     => 'image',
+        ),
+        // Order
+        'order_name' => array(
+            'category'     => 'order',
+            'title'        => _a('Show name'),
+            'description'  => '',
+            'edit'         => 'checkbox',
+            'filter'       => 'number_int',
+            'value'        => 1
+        ),
+        'order_email' => array(
+            'category'     => 'order',
+            'title'        => _a('Show email'),
+            'description'  => '',
+            'edit'         => 'checkbox',
+            'filter'       => 'number_int',
+            'value'        => 1
+        ),
+        'order_phone' => array(
+            'category'     => 'order',
+            'title'        => _a('Show phone'),
+            'description'  => '',
+            'edit'         => 'checkbox',
+            'filter'       => 'number_int',
+            'value'        => 1
+        ),
+        'order_mobile' => array(
+            'category'     => 'order',
+            'title'        => _a('Show mobile'),
+            'description'  => '',
+            'edit'         => 'checkbox',
+            'filter'       => 'number_int',
+            'value'        => 1
+        ),
+        'order_company' => array(
+            'category'     => 'order',
+            'title'        => _a('Show company'),
+            'description'  => '',
+            'edit'         => 'checkbox',
+            'filter'       => 'number_int',
+            'value'        => 1
+        ),
+        'order_address' => array(
+            'category'     => 'order',
+            'title'        => _a('Show address'),
+            'description'  => '',
+            'edit'         => 'checkbox',
+            'filter'       => 'number_int',
+            'value'        => 1
+        ),
+        'order_country' => array(
+            'category'     => 'order',
+            'title'        => _a('Show country'),
+            'description'  => '',
+            'edit'         => 'checkbox',
+            'filter'       => 'number_int',
+            'value'        => 1
+        ),
+        'order_city' => array(
+            'category'     => 'order',
+            'title'        => _a('Show city'),
+            'description'  => '',
+            'edit'         => 'checkbox',
+            'filter'       => 'number_int',
+            'value'        => 1
+        ),
+        'order_zip' => array(
+            'category'     => 'order',
+            'title'        => _a('Show Zip code'),
+            'description'  => '',
+            'edit'         => 'checkbox',
+            'filter'       => 'number_int',
+            'value'        => 1
         ),
     ),
 );

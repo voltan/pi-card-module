@@ -17,7 +17,7 @@ use Pi\Application\Api\AbstractApi;
 use Zend\Json\Json;
 
 /*
- * Pi::api('product', 'card')->getProduct($parameter, $type);
+ * Pi::api('product', 'card')->getProduct($parameter, $type, $number);
  * Pi::api('product', 'card')->productList($category);
  * Pi::api('product', 'card')->updateStock($id);
  * Pi::api('product', 'card')->viewPrice($price);
@@ -26,11 +26,11 @@ use Zend\Json\Json;
 
 class Product extends AbstractApi
 {
-    public function getProduct($parameter, $type = 'id')
+    public function getProduct($parameter, $type = 'id', $number = 1)
     {
         // Get product
         $product = Pi::model('product', $this->getModule())->find($parameter, $type);
-        $product = $this->canonizeProduct($product);
+        $product = $this->canonizeProduct($product, $number);
         return $product;
     }
 
@@ -78,7 +78,7 @@ class Product extends AbstractApi
         }
     }
 
-    public function canonizeProduct($product)
+    public function canonizeProduct($product, $number = 1)
     {
         // Check
         if (empty($product)) {
@@ -98,20 +98,26 @@ class Product extends AbstractApi
             'module'        => $this->getModule(),
             'controller'    => 'product',
             'slug'          => $product['slug'],
-        )));
+        ))); */
         // Set cart url
         $product['cartUrl'] = Pi::url(Pi::service('url')->assemble('card', array(
             'module'        => $this->getModule(),
             'controller'    => 'checkout',
             'action'        => 'add',
-            'slug'          => $product['slug'],
-        ))); */
-        // Set category information
-        //$product['categoryInfo'] = Pi::api('category', 'card')->getCategory($product['category']);
+            'id'            => $product['id'],
+        )));
         // Set price
         $product['price_view'] = $this->viewPrice($product['price']);
         // Set marketable
         $product['marketable'] = $this->marketable($product);
+        // Set number
+        $number =  (in_array($number, array(1,2,3,4,5))) ? $number : 1;
+        $product['number'] = $number;
+        $product['number_view'] = _number($number);
+        // Set total
+        $total = $product['price'] * $number;
+        $product['total'] = $total;
+        $product['total_view'] = $this->viewPrice($total);
         // Set image url
         if ($product['image']) {
             // Set image original url

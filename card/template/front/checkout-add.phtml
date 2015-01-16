@@ -1,0 +1,27 @@
+<div class="clearfix">
+	<div class="col-md-8">
+		<?php echo $this->form($form); ?>
+	</div>
+	<div class="col-md-4">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title"><?php _e('Basket'); ?></h3>
+			</div>
+			<div class="panel-body">
+				<div class="text-center">
+					<img class="img-responsive img-thumbnail" src="<?php echo $product['mediumUrl']; ?>" alt="<?php echo $product['title']; ?>">
+				     <h1><?php echo $product['title']; ?></h1>
+				</div>
+     			<div class="clearfix">
+     				<strong class="col-sm-4"><?php _e('Price'); ?> : </strong><span class="col-sm-8"><?php echo $product['price_view']; ?></span>
+     			</div>
+     			<div class="clearfix">
+     				<strong class="col-sm-4"><?php _e('Number'); ?> : </strong><span class="col-sm-8"><?php echo $product['number_view']; ?></span>
+     			</div>
+				<div class="clearfix">
+					<strong class="col-sm-4"><?php _e('Total'); ?> : </strong><span class="col-sm-8"><?php echo $product['total_view']; ?></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

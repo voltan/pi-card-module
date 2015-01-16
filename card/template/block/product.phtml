@@ -1,3 +1,49 @@
-<pre>
-<?php print_r($block); ?>
-</pre> 
+<div class="card-product">
+	<div class="card-product-tab clearfix">
+		<ul id="myTab" class="nav nav-tabs" role="tablist">
+			<?php $i = 1; ?>
+			<?php foreach ($block['category'] as $category) { ?>
+			    <li<?php if ($i == 1) {echo ' class="active"';} ?>><a href="#category-<?php echo $category['id']; ?>" title="<?php echo $category['title']; ?>"><?php echo $category['title']; ?></a></li>
+				<?php $i++; ?>
+			<?php } ?>
+		</ul>
+		<div class="tab-content">
+			<?php $i = 1; ?>
+			<?php foreach ($block['category'] as $category) { ?>
+			<div class="tab-pane<?php if ($i == 1) {echo ' active';} ?>" id="category-<?php echo $category['id']; ?>">
+				<?php $products = $block['product'][$category['id']]; ?>
+				<?php foreach ($products as $product) { ?>
+				<div class="col-sm-3 col-md-3">
+					<div class="thumbnail text-center">
+						<img src="<?php echo $product['thumbUrl']; ?>" alt="<?php echo $product['title']; ?>">
+						<div class="caption">
+							<h4><?php echo $product['title']; ?></h4>
+							<div class="form-group clearfix">
+								<label class="col-sm-6 control-label"><?php _e('Number'); ?> : </label>
+								<div class="col-sm-6">
+									<select class="form-control" name="number">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select> 
+								</div>
+							</div>
+							<p><a href="<?php echo $product['cartUrl']; ?>" class="btn btn-success" role="button"><?php echo _b('Buy'); ?></a></p>
+						</div>
+					</div>
+				</div>
+				<?php } ?>
+			</div>
+			<?php $i++; ?>
+			<?php } ?>
+		</div>
+	</div>
+</div>
+<script>
+$('#myTab a').click(function (e) {
+	e.preventDefault()
+	$(this).tab('show')
+})
+</script>

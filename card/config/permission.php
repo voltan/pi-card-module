@@ -13,22 +13,10 @@
 return array(
     // Front section
     'front' => array(
-        'public'    => array(
-            'title'         => _a('Global public resource'),
-            'access'        => array(
-                'guest',
-                'member',
-            ),
-        ),
         'checkout'       => array(
             'title'         => _a('Checkout'),
             'access'        => array(
-                'member',
-            ),
-        ),
-        'customer'       => array(
-            'title'         => _a('Customer'),
-            'access'        => array(
+                'guest',
                 'member',
             ),
         ),
@@ -55,12 +43,6 @@ return array(
         ),
         'order'       => array(
             'title'         => _a('Orders'),
-            'access'        => array(
-                //'admin',
-            ),
-        ),
-        'customer'       => array(
-            'title'         => _a('Customers'),
             'access'        => array(
                 //'admin',
             ),
