@@ -56,7 +56,6 @@ class Card extends Standard
                     if ($parts[1] == 'add') {
                         $matches['action'] = 'add';
                         $matches['id'] = $this->decode($parts[2]);
-                        $matches['number'] = $this->decode($parts[3]);
                     } elseif($parts[1] == 'finish') {
                         $matches['action'] = 'finish';
                     } 
@@ -112,11 +111,6 @@ class Card extends Standard
         // Set id
         if (!empty($mergedParams['id'])) {
             $url['id'] = $mergedParams['id'];
-        }
-
-        // Set number
-        if (!empty($mergedParams['number'])) {
-            $url['number'] = $mergedParams['number'];
         }
 
         // Make url

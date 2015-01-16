@@ -21,7 +21,7 @@ class OrderFilter extends InputFilter
 {
     public function __construct()
     {
-        $config = Pi::service('registry')->config->read('shop', 'order');
+        $config = Pi::service('registry')->config->read('card', 'order');
         // name
         if ($config['order_name']) {
             // first_name

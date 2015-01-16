@@ -1,3 +1,12 @@
+<?php 
+    $this->jQuery();
+    $tabScript =<<<'EOT'
+$('#myTab a').click(function (e) {
+	e.preventDefault()
+	$(this).tab('show')
+})
+EOT;
+?>
 <div class="card-product">
 	<div class="card-product-tab clearfix">
 		<ul id="myTab" class="nav nav-tabs" role="tablist">
@@ -14,23 +23,31 @@
 				<?php $products = $block['product'][$category['id']]; ?>
 				<?php foreach ($products as $product) { ?>
 				<div class="col-sm-3 col-md-3">
-					<div class="thumbnail text-center">
-						<img src="<?php echo $product['thumbUrl']; ?>" alt="<?php echo $product['title']; ?>">
+					<div class="thumbnail">
+						<div class="text-center">
+							<img src="<?php echo $product['thumbUrl']; ?>" alt="<?php echo $product['title']; ?>">
+						</div>
 						<div class="caption">
-							<h4><?php echo $product['title']; ?></h4>
-							<div class="form-group clearfix">
-								<label class="col-sm-6 control-label"><?php _e('Number'); ?> : </label>
-								<div class="col-sm-6">
-									<select class="form-control" name="number">
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-									</select> 
-								</div>
+							<div class="text-center">
+								<h4><?php echo $product['title']; ?></h4>
 							</div>
-							<p><a href="<?php echo $product['cartUrl']; ?>" class="btn btn-success" role="button"><?php echo _b('Buy'); ?></a></p>
+							<div class="card-product-number">
+								<form action="<?php echo $product['cartUrl']; ?>" metod="get">
+									<div class="form-group clearfix">
+										<label class="col-sm-6 control-label"><?php _e('Number'); ?> : </label>
+										<div class="col-sm-6">
+											<select class="form-control" name="number">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+											</select> 
+										</div>
+									</div>
+									<button type="submit" class="btn btn-default">Submit</button>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -41,9 +58,3 @@
 		</div>
 	</div>
 </div>
-<script>
-$('#myTab a').click(function (e) {
-	e.preventDefault()
-	$(this).tab('show')
-})
-</script>

@@ -33,7 +33,7 @@ class CheckoutController extends ActionController
         // Get info from url
         $module = $this->params('module');
         $id = $this->params('id');
-        $number = $this->params('number', 1);
+        $number = _get('number');
         // Get product
         $product = Pi::api('product', 'card')->getProduct($id, 'id', $number);
         // Check product
@@ -94,10 +94,6 @@ class CheckoutController extends ActionController
                 if ($result['status']) {
                     $this->jump($result['invoice_url'], $result['message'], 'success');
                 }
-
-                print_r($result);
-            } else {
-                $this->jump(Pi::url(), __('Form'), 'error');
             }
         }
         // Set view
