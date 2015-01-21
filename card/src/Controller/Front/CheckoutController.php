@@ -71,6 +71,10 @@ class CheckoutController extends ActionController
                 $row = $this->getModel('order')->createRow();
                 $row->assign($values);
                 $row->save();
+                // Set session
+                $_SESSION['card']['order'] = $row->id;
+                $_SESSION['card']['user'] = Pi::user()->getId();
+                $_SESSION['card']['ip'] = Pi::user()->getIp();
                 // Set invoice description
                 $description = array();
                 // Set order array
@@ -91,9 +95,12 @@ class CheckoutController extends ActionController
                     $order['description']
                 );
                 // Check it save and go to bank
-                if ($result['status']) {
-                    $this->jump($result['invoice_url'], $result['message'], 'success');
+                if ($result['status'] > 0) {
+                    $this->jump($result['pay_url'], $result['message'], 'success');
                 }
+                // Test
+                //$url = Pi::api('order', 'card')->updatePayment($order['id'], $order['amount'], $order['adapter']);
+                //$this->jump($url, __('Test order'), 'success');
             }
         }
         // Set view
@@ -103,5 +110,57 @@ class CheckoutController extends ActionController
     }
 
 	public function finishAction()
-    {}
+    {
+        // Get info from url
+        $id = $this->params('id');
+        $module = $this->params('module');
+        // Find order
+        $order = $this->getModel('order')->find($id);
+        // Check session
+        if (!isset($_SESSION['card']['order']) 
+            || empty($_SESSION['card']['order']) 
+            || !isset($_SESSION['card']['ip']) 
+            || empty($_SESSION['card']['ip']))
+        {
+            $this->jump(Pi::url(), __('Order not set 1.'));
+        }
+        // Check order
+        if (!$order->id) {
+            $this->jump(Pi::url(), __('Order not set 2.'));
+        }
+        // Check order
+        if ($_SESSION['card']['order'] != $order->id) {
+            $this->jump(Pi::url(), __('It not your order.'));
+        }
+        // Check user
+        if (Pi::user()->getId() > 0) {
+            if ($order->uid != Pi::user()->getId()) {
+                $this->jump(Pi::url(), __('It not your order.'));
+            }
+        }
+        // Check ip
+        if ($order->ip != Pi::user()->getIp()) {
+            $this->jump(Pi::url(), __('It not your order.'));
+        }
+        // Check status payment
+        if ($order->payment_method == 'online' && $order->status_payment != 2) {
+            $this->jump(Pi::url(), __('This order not pay'));
+        }
+        // Check time payment
+        $time = time() - 3600;
+        if ($time > $order->time_payment) {
+            $this->jump(Pi::url(), __('This is old order and you pay it before'));
+        }
+        // Set order
+        $order = $order->toArray();
+        // Get detail
+        $details = Pi::api('order', 'card')->getDetails($order);
+        // product
+        $product = Pi::api('product', 'card')->getProduct($order['product_id']);
+        // Set view
+        $this->view()->setTemplate('checkout-finish');
+        $this->view()->assign('order', $order);
+        $this->view()->assign('details', $details);
+        $this->view()->assign('product', $product);
+    }
 }

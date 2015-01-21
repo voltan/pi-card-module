@@ -1,0 +1,67 @@
+<div class="clearfix">
+	<div class="col-md-8">
+		<h2><?php _e('Order details'); ?></h2>
+		<?php foreach ($details as $detail) { ?>
+		<div class="alert alert-success">
+			<?php if (!empty($product['field_1_title']) && !empty($detail['field_1'])) { ?>
+				<p><span><?php echo $product['field_1_title']; ?> : </span><strong><?php echo $detail['field_1']; ?></strong></p>
+			<?php } ?>
+			<?php if (!empty($product['field_2_title']) && !empty($detail['field_2'])) { ?>
+				<p><span><?php echo $product['field_2_title']; ?> : </span><strong><?php echo $detail['field_2']; ?></strong></p>
+			<?php } ?>
+			<?php if (!empty($product['field_3_title']) && !empty($detail['field_3'])) { ?>
+				<p><span><?php echo $product['field_3_title']; ?> : </span><strong><?php echo $detail['field_3']; ?></strong></p>
+			<?php } ?>
+			<?php if (!empty($product['field_4_title']) && !empty($detail['field_4'])) { ?>
+				<p><span><?php echo $product['field_4_title']; ?> : </span><strong><?php echo $detail['field_4']; ?></strong></p>
+			<?php } ?>
+			<?php if (!empty($product['field_5_title']) && !empty($detail['field_5'])) { ?>
+				<p><span><?php echo $product['field_5_title']; ?> : </span><strong><?php echo $detail['field_5']; ?></strong></p>
+			<?php } ?>
+			<?php if (!empty($product['field_6_title']) && !empty($detail['field_6'])) { ?>
+				<p><span><?php echo $product['field_6_title']; ?> : </span><strong><?php echo $detail['field_6']; ?></strong></p>
+			<?php } ?>
+			<?php if (!empty($product['field_7_title']) && !empty($detail['field_7'])) { ?>
+				<p><span><?php echo $product['field_7_title']; ?> : </span><strong><?php echo $detail['field_7']; ?></strong></p>
+			<?php } ?>
+			<?php if (!empty($product['field_8_title']) && !empty($detail['field_8'])) { ?>
+				<p><span><?php echo $product['field_8_title']; ?> : </span><strong><?php echo $detail['field_8']; ?></strong></p>
+			<?php } ?>
+			<?php if (!empty($product['field_9_title']) && !empty($detail['field_9'])) { ?>
+				<p><span><?php echo $product['field_9_title']; ?> : </span><strong><?php echo $detail['field_9']; ?></strong></p>
+			<?php } ?>
+			<?php if (!empty($product['field_10_title']) && !empty($detail['field_10'])) { ?>
+				<p><span><?php echo $product['field_10_title']; ?> : </span><strong><?php echo $detail['field_10']; ?></strong></p>
+			<?php } ?>
+		</div>
+		<?php } ?>
+	</div>
+	<div class="col-md-4">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title"><?php _e('Product and order'); ?></h3>
+			</div>
+			<div class="panel-body">
+				<div class="text-center">
+					<img class="img-responsive img-thumbnail" src="<?php echo $product['mediumUrl']; ?>" alt="<?php echo $product['title']; ?>">
+				     <h1><?php echo $product['title']; ?></h1>
+				</div>
+     			<div class="clearfix">
+     				<strong><?php _e('Name'); ?> : </strong><span><?php echo $order['first_name']; ?> <?php echo $order['last_name']; ?></span>
+     			</div>
+     			<div class="clearfix">
+     				<strong><?php _e('Email'); ?> : </strong><span><?php echo $order['email']; ?></span>
+     			</div>
+				<div class="clearfix">
+     				<strong><?php _e('Mobile'); ?> : </strong><span><?php echo $order['mobile']; ?></span>
+				</div>
+				<div class="clearfix">
+     				<strong><?php _e('Paid price'); ?> : </strong><span><?php echo _currency($order['paid_price']); ?> (<?php echo $order['payment_adapter']; ?>)</span>
+				</div>
+				<div class="clearfix">
+     				<strong><?php _e('Time payment'); ?> : </strong><span><?php echo _date($order['time_payment']); ?></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

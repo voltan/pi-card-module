@@ -50,7 +50,7 @@ class ProductController extends ActionController
         // Set info
         $column = array('id', 'title', 'slug', 'status', 'time_create', 'time_update');
         // Get list of product
-        $select = $this->getModel('product')->select()->columns($column)->order($order);
+        $select = $this->getModel('product')->select()->columns($column)->order($order)->offset($offset)->limit($limit);;
         $rowset = $this->getModel('product')->selectWith($select);
         // Make list
         foreach ($rowset as $row) {

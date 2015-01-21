@@ -58,7 +58,8 @@ class Card extends Standard
                         $matches['id'] = $this->decode($parts[2]);
                     } elseif($parts[1] == 'finish') {
                         $matches['action'] = 'finish';
-                    } 
+                        $matches['id'] = $this->decode($parts[2]);
+                    }
                     break; 
             }    
         } 

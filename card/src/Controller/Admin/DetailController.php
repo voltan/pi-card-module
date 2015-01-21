@@ -61,7 +61,7 @@ class DetailController extends ActionController
         $where = array('product' => $product['id']);
         $list = array();
         // Get list of product
-        $select = $this->getModel('detail')->select()->where($where)->order($order);
+        $select = $this->getModel('detail')->select()->where($where)->order($order)->offset($offset)->limit($limit);;
         $rowset = $this->getModel('detail')->selectWith($select);
         // Make list
         foreach ($rowset as $row) {

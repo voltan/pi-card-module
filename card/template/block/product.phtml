@@ -6,6 +6,7 @@ $('#myTab a').click(function (e) {
 	$(this).tab('show')
 })
 EOT;
+    $this->footScript()->appendScript($tabScript);
 ?>
 <div class="card-product">
 	<div class="card-product-tab clearfix">
@@ -32,6 +33,7 @@ EOT;
 								<h4><?php echo $product['title']; ?></h4>
 							</div>
 							<div class="card-product-number">
+								<?php if ($product['marketable'] == 1) { ?>
 								<form action="<?php echo $product['cartUrl']; ?>" metod="get">
 									<div class="form-group clearfix">
 										<label class="col-sm-6 control-label"><?php echo _b('Number'); ?> : </label>
@@ -47,6 +49,11 @@ EOT;
 									</div>
 									<button type="submit" class="btn btn-default"><?php echo _b('Buy'); ?></button>
 								</form>
+								<?php } else { ?>
+                                <div class="text-center">
+                                	<?php echo _b('This product not availabale'); ?>
+                                </div>
+								<?php } ?>
 							</div>
 						</div>
 					</div>
