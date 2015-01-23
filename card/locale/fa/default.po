@@ -1,0 +1,1462 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: card\n"
+"POT-Creation-Date: 2015-01-23 09:26+0330\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: FA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: /var/www/html/local/pi/pi-release-2.5.0/usr/module/"
+"card\n"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/DetailEditForm.php:55
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:87
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:94
+msgid "Status"
+msgstr "وضعیت"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/DetailEditForm.php:57
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:89
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:96
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:36
+msgid "Published"
+msgstr "منتشر شده"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/DetailEditForm.php:58
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:90
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:97
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:37
+msgid "Pending review"
+msgstr "در انتظار تایید"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/DetailEditForm.php:59
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:91
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:98
+msgid "Draft"
+msgstr "پیش نویس"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/DetailEditForm.php:60
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:92
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:99
+msgid "Private"
+msgstr "خصوصی"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/DetailEditForm.php:61
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:93
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:100
+msgid "Delete"
+msgstr "حذف"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/DetailEditForm.php:200
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/DetailForm.php:178
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:186
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:354
+msgid "Submit"
+msgstr "ارسال"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:43
+msgid "First Name"
+msgstr "نام"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:55
+msgid "Last name"
+msgstr "نام خانوادگی"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:69
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-finish.phtml:53
+msgid "Email"
+msgstr "ایمیل"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:83
+msgid "Phone"
+msgstr "تلفن"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:96
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-finish.phtml:56
+msgid "Mobile"
+msgstr "موبایل"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:110
+msgid "Company"
+msgstr "شرکت"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:123
+msgid "Address"
+msgstr "آدرس"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:139
+msgid "Country"
+msgstr "کشور"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:153
+msgid "City"
+msgstr "شهر"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:167
+msgid "Zip code"
+msgstr "کد پستی"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:181
+msgid "Adapter"
+msgstr "پایانه پرداخت"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:192
+msgid "Confirm and pay"
+msgstr "تایید و پرداخت"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:52
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:58
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:10
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/category-index.phtml:10
+msgid "Title"
+msgstr "عنوان"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:63
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:69
+msgid "slug"
+msgstr "اسلاگ"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:74
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:81
+msgid "Description"
+msgstr "توضیحات"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:113
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:129
+msgid "Remove image"
+msgstr "حذف تصویر"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:129
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:145
+msgid "Image"
+msgstr "تصویر"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:142
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:190
+msgid "SEO options"
+msgstr "گزینه های سئو"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:149
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:197
+msgid "SEO Title"
+msgstr "عنوان سئو"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:161
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:209
+msgid "SEO Keywords"
+msgstr "کلمات کلیدی سئو"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:173
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:221
+msgid "SEO Description"
+msgstr "توضیح سئو"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:44
+msgid "General options"
+msgstr "گزینه های سراسری"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:109
+msgid "Category"
+msgstr "شاخه"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:158
+msgid "Price options"
+msgstr "گزینه های قیمت"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:165
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-add.phtml:16
+msgid "Price"
+msgstr "قیمت"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:177
+msgid "Price title"
+msgstr "عنوان قیمت"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:235
+msgid "Fields options"
+msgstr "گزینه های فیلد"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:242
+msgid "Field 1 title"
+msgstr "عنوان فیلد ۱"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:253
+msgid "Field 2 title"
+msgstr "عنوان فیلد ۲"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:264
+msgid "Field 3 title"
+msgstr "عنوان فیلد ۳"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:275
+msgid "Field 4 title"
+msgstr "عنوان فیلد ۴"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:286
+msgid "Field 5 title"
+msgstr "عنوان فیلد ۵"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:297
+msgid "Field 6 title"
+msgstr "عنوان فیلد ۶"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:308
+msgid "Field 7 title"
+msgstr "عنوان فیلد ۷"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:319
+msgid "Field 8 title"
+msgstr "عنوان فیلد ۸"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:330
+msgid "Field 9 title"
+msgstr "عنوان فیلد ۹"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:341
+msgid "Field 10 title"
+msgstr "عنوان فیلد ۱۰"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/Element/Gateway.php:30
+msgid "Offline"
+msgstr "آفلاین"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Front/CheckoutController.php:41
+msgid "The product not found."
+msgstr "این محصول یافت نشد"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Front/CheckoutController.php:125
+msgid "Order not set 1."
+msgstr "سفارشی ثبت نشده"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Front/CheckoutController.php:129
+msgid "Order not set 2."
+msgstr "سفارشی ثبت نشده"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Front/CheckoutController.php:133
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Front/CheckoutController.php:138
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Front/CheckoutController.php:143
+msgid "It not your order."
+msgstr "این سفارش مربوط به شما نیست"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Front/CheckoutController.php:147
+msgid "This order not pay"
+msgstr "این سفارش پرداخت نشده"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Front/CheckoutController.php:152
+msgid "This is old order and you pay it before"
+msgstr "این یک سفارش قدیمی است و شما قبلا آن را پرداخت کرده اید"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:47
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:106
+msgid "Please select product."
+msgstr "لطفا یک محصول انتخاب کنید"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:54
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:113
+msgid "Your product have error."
+msgstr "خطا در محصول"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:71
+msgid "Yes"
+msgstr "بله"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:71
+msgid "No"
+msgstr "خیر"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:95
+#, php-format
+msgid "List of detail on %s"
+msgstr "فهرست تمام جزییات در %s"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:186
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:283
+msgid "Information data saved successfully."
+msgstr "اطلاعات با موفقیت ذخیره شد"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:189
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:286
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/ProductController.php:206
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/CategoryController.php:195
+msgid "Invalid data, please check and re-submit."
+msgstr "اطلاعات اشتباه، لطفا بررسی کنید و دوباره ارسال کنید"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:196
+#, php-format
+msgid "Add detail to %s"
+msgstr "اضافه کردن جزییات برای %s"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:207
+msgid "Please select product and detail."
+msgstr "لطفا یک محصول و جززیات آن را انتخاب کنید"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:216
+msgid "Your product or detail have error."
+msgstr "خطا در محصول یا جزییات آن"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:296
+#, php-format
+msgid "Edit detail to %s"
+msgstr "ویرایش جزییات %s"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/ProductController.php:151
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/CategoryController.php:142
+msgid "Problem in upload image. please try again"
+msgstr "مشکل در بارگذاری تصویر، لطفا مجددا امتحان کنید"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/ProductController.php:203
+msgid "Product data saved successfully."
+msgstr "اطلاعات محصول با موفقیت ذخیره شد"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/ProductController.php:217
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:4
+msgid "Add product"
+msgstr "محصول جدید"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/ProductController.php:241
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/CategoryController.php:229
+#, php-format
+msgid "Image of %s removed"
+msgstr "تصویر مربوط به %s حذف شد"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/ProductController.php:244
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/CategoryController.php:232
+msgid "Image not remove"
+msgstr "تصویر حذف نشد"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/ProductController.php:248
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-index.phtml:4
+msgid "Please select product"
+msgstr "لطفا یک محصول انتخاب کنید"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/CategoryController.php:192
+msgid "Category data saved successfully."
+msgstr "اطلاعات شاخه با موفقیت ذخیره شد"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/CategoryController.php:205
+msgid "Add category"
+msgstr "شاخه جدید"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/CategoryController.php:236
+msgid "Please select category"
+msgstr "لطفا یک شاخه انتخاب کنید"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-add.phtml:8
+msgid "Basket"
+msgstr "سبد خرید"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-add.phtml:19
+msgid "Number"
+msgstr "تعداد"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-add.phtml:22
+msgid "Total"
+msgstr "مجموع"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-finish.phtml:3
+msgid "Order details"
+msgstr "جزییات سفارش"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-finish.phtml:42
+msgid "Product and order"
+msgstr "اطلاعات سفارش و محصول"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-finish.phtml:50
+msgid "Name"
+msgstr "نام"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-finish.phtml:59
+msgid "Paid price"
+msgstr "مبلغ پرداخت شده"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-finish.phtml:62
+msgid "Time payment"
+msgstr "زمان پرداخت"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-view.phtml:6
+msgid "You dont add any details for this products"
+msgstr "شما هیچ جزییاتی برای این محصول وارد نکرده اید"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-view.phtml:11
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:9
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/category-index.phtml:9
+msgid "ID"
+msgstr "شناسه"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-view.phtml:12
+msgid "Create time"
+msgstr "زمان ایجاد"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-view.phtml:13
+msgid "Is sales"
+msgstr "قابل فروش"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-view.phtml:14
+msgid "Sales time"
+msgstr "زمان فروش"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-view.phtml:15
+msgid "Sales price"
+msgstr "قیمت فروش"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-view.phtml:16
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:11
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/category-index.phtml:11
+msgid "Action"
+msgstr "عملکرد"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-view.phtml:26
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:27
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/category-index.phtml:25
+msgid "Edit"
+msgstr "ویرایش"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/category-update.phtml:16
+msgid "Remove image category in process"
+msgstr "حذف تصویر شاخه در حال انجام است"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-update.phtml:16
+msgid "Remove image product in process"
+msgstr "حذف تصویر محصول در حال انجام است"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:6
+msgid "List of product"
+msgstr "فهرست محصولات"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:28
+msgid "View detail"
+msgstr "نمایش جزییات"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:29
+msgid "Add detail"
+msgstr "جزییات جدید"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:38
+msgid "Trash"
+msgstr "سطل آشغال"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/category-index.phtml:4
+msgid "Add Category"
+msgstr "شاخه جدید"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/category-index.phtml:6
+msgid "List of Categores"
+msgstr "فهرست شاخه ها"
+
+#~ msgid "Not processed"
+#~ msgstr "بررسی نشده"
+
+#~ msgid "Orders validated"
+#~ msgstr "سفارش های تایید شده"
+
+#~ msgid "Orders pending"
+#~ msgstr "سفارش های در انتظار تایید"
+
+#~ msgid "Orders failed"
+#~ msgstr "سفارش های خراب"
+
+#~ msgid "Orders cancelled"
+#~ msgstr "سفارش های لغو شده"
+
+#~ msgid "Fraudulent orders"
+#~ msgstr "سفارش های فریب آمیز"
+
+#~ msgid "Orders finished"
+#~ msgstr "سفارش های تکمیل شده"
+
+#~ msgid "UnPaid"
+#~ msgstr "پرداخت نشده"
+
+#~ msgid "Paid"
+#~ msgstr "پرداخت شده"
+
+#~ msgid "Packed"
+#~ msgstr "بسته بندی شده"
+
+#~ msgid "Posted"
+#~ msgstr "ارسال شده"
+
+#~ msgid "Delivered"
+#~ msgstr "تحویل شده"
+
+#~ msgid "Back eaten"
+#~ msgstr "برگشت خورده"
+
+#~ msgid "Not Paid"
+#~ msgstr "پرداخت نشده"
+
+#~ msgid "Not Delivery"
+#~ msgstr "تحویل نشده"
+
+#~ msgid "Not Finish"
+#~ msgstr "تکمیل نشده"
+
+#~ msgid "Product"
+#~ msgstr "محصول"
+
+#~ msgid "Online"
+#~ msgstr "آنلاین"
+
+#~ msgid "Title search type"
+#~ msgstr "نوع جستجو در عنوان"
+
+#~ msgid "Included"
+#~ msgstr "شامل"
+
+#~ msgid "Start with"
+#~ msgstr "شروع با"
+
+#~ msgid "End with"
+#~ msgstr "پایان با"
+
+#~ msgid "According"
+#~ msgstr "مطابق با"
+
+#~ msgid "Price from"
+#~ msgstr "قیمت از"
+
+#~ msgid "Price to"
+#~ msgstr "قیمت تا"
+
+#~ msgid "Order"
+#~ msgstr "سفارش"
+
+#~ msgid "All"
+#~ msgstr "همه"
+
+#~ msgid "Payment"
+#~ msgstr "پرداخت"
+
+#~ msgid "Delivery"
+#~ msgstr "روش تحویل"
+
+#~ msgid "Filter"
+#~ msgstr "فیلتر"
+
+#~ msgid "Update"
+#~ msgstr "به روز کردن"
+
+#~ msgid "Select for rebuild"
+#~ msgstr "انتخاب برای دوباره سازی"
+
+#~ msgid "All of tables"
+#~ msgstr "همه جدول ها"
+
+#~ msgid "Just product table"
+#~ msgstr "فقط جدول محصولات"
+
+#~ msgid "Just category table"
+#~ msgstr "فقط جدول شاخه ها"
+
+#~ msgid "Location"
+#~ msgstr "انتخاب مکان"
+
+#~ msgid "Packing"
+#~ msgstr "بسته بندی ؟"
+
+#~ msgid "Next"
+#~ msgstr "تکمیل سفارش"
+
+#~ msgid "Parent"
+#~ msgstr "والد"
+
+#~ msgid "Is active %s ?"
+#~ msgstr "%s فعال شود؟"
+
+#~ msgid "Time ( days )"
+#~ msgstr "زمان ( روز )"
+
+#~ msgid "Parent Category"
+#~ msgstr "شاخه والد"
+
+#~ msgid "Type"
+#~ msgstr "نوع"
+
+#~ msgid "Text : type text content"
+#~ msgstr "متن : نوشتن محتوای متنی"
+
+#~ msgid "Link : add url for click"
+#~ msgstr "لینک : اضافه کردن لینک برای کلیک"
+
+#~ msgid "Video : add flv or mp4 url for play on video player"
+#~ msgstr "ویدیو : درج لینک flv یا mp4 برای نمایش در پخش کننده ویدیو"
+
+#~ msgid "Audio : add mp3 url for play on audio player"
+#~ msgstr "صدا : درج لینک mp3 برای پخش در پخش کننده صوتی"
+
+#~ msgid "File : add file link for download"
+#~ msgstr "فایل : درج لینک فایل برای دانلود"
+
+#~ msgid "Currency : add view price for anything"
+#~ msgstr "قیمت : درج قیمت برای نمایش"
+
+#~ msgid "Date : add date for view"
+#~ msgstr "تاریخ : درج تاریخ برای نمایش"
+
+#~ msgid "Number : add number"
+#~ msgstr "عدد : درج عدد"
+
+#~ msgid "Select : add select box for choose"
+#~ msgstr "انتخاب : درج باکس انتخاب"
+
+#~ msgid "Value"
+#~ msgstr "مقدار"
+
+#~ msgid "Search"
+#~ msgstr "جستجو"
+
+#~ msgid "Summary"
+#~ msgstr "خلاصه"
+
+#~ msgid "Stock"
+#~ msgstr "موجودی"
+
+#~ msgid "Stock Alert"
+#~ msgstr "اخطار پایان موجودی"
+
+#~ msgid "Price Discount"
+#~ msgstr "تخفیف قیمت"
+
+#~ msgid "Tags"
+#~ msgstr "برچسب ها"
+
+#~ msgid "Use `|` as delimiter to separate tag terms"
+#~ msgstr "با استفاده از `|` کلمات را از هم جدا کنید"
+
+#~ msgid "Extra fields"
+#~ msgstr "فیلد های اضافی"
+
+#~ msgid "Home Page"
+#~ msgstr "صفحه اصلی"
+
+#~ msgid "All Category"
+#~ msgstr "همه شاخه ها"
+
+#~ msgid "Select product for add to Special"
+#~ msgstr "انتخاب محصول برای درج در ویژه ها"
+
+#~ msgid "Publish date"
+#~ msgstr "تاریخ انتشار"
+
+#~ msgid "Expire date"
+#~ msgstr "تاریخ ابطال"
+
+#~ msgid "The tag not set."
+#~ msgstr "برچسب تنظیم نشده"
+
+#~ msgid "The tag not found."
+#~ msgstr "برچسب یافت نشد"
+
+#~ msgid "All products by %s tag"
+#~ msgstr "همه محصولات برچسب %s"
+
+#~ msgid "List of all used tags on shop"
+#~ msgstr "فهرست تمام برچسب های استفاده شده در فروشگاه"
+
+#~ msgid "Special products"
+#~ msgstr "محصولات ویژه"
+
+#~ msgid "New products"
+#~ msgstr "آخرین محصولات"
+
+#~ msgid "Your search successfully. Go to result page"
+#~ msgstr "جستجوی شما با موفقیت انجام شد، نتایج آن را مشاهده می نمایید"
+
+#~ msgid "Search result of %s"
+#~ msgstr "نتایج جستجوی %s"
+
+#~ msgid "Search result"
+#~ msgstr "نتایج جستجو"
+
+#~ msgid "Your cart is empty."
+#~ msgstr "سبد خرید شما خالی است"
+
+#~ msgid "So sorry, At this moment order is inactive"
+#~ msgstr "متاسفانه در این لحظه امکان ثبت سفارش وجود ندارد"
+
+#~ msgid "Your order saved and we will call you soon"
+#~ msgstr "سفارش شما ثبت شد ، ما به زودی با شما تماس میگیریم"
+
+#~ msgid "Checkout data not saved."
+#~ msgstr "اطلاعات شما ذخیره نشد"
+
+#~ msgid "Checkout"
+#~ msgstr "مراحل سفارش"
+
+#~ msgid "Selected product removed from your cart"
+#~ msgstr "محصول انتخاب شده از سبد خرید شما حذف شد"
+
+#~ msgid "Update number"
+#~ msgstr "تغییر تعداد"
+
+#~ msgid "You can not set product number to 0"
+#~ msgstr "شما نمی توانید تعداد یک محصول را ۰ تنظیم کنید"
+
+#~ msgid "The product was not marketable."
+#~ msgstr "این محصول قابل فروش نیست"
+
+#~ msgid "Your cart are empty."
+#~ msgstr "سبد خرید شما خالی است"
+
+#~ msgid "Your cart are empty"
+#~ msgstr "سبد خرید شما خالی است"
+
+#~ msgid "You did not bought any products from us."
+#~ msgstr "شما هنوز هیچ محصولی از ما نخریده اید"
+
+#~ msgid "Review data saved successfully. And it show after admin review"
+#~ msgstr ""
+#~ "بررسی تخصصی شما با موفقیت ذخیره شد، بعد از تایید مدیر در سایت نمایش داده "
+#~ "می شود"
+
+#~ msgid "Review data not saved."
+#~ msgstr "بررسی تخصصی ذخیره نشد"
+
+#~ msgid "Review"
+#~ msgstr "بررسی تخصصی"
+
+#~ msgid "The category not found."
+#~ msgstr "شاخه یافت نشد"
+
+#~ msgid "You must select product"
+#~ msgstr "شما باید یک محصول را انتخاب کنید"
+
+#~ msgid "Your selected product not exist"
+#~ msgstr "محصول انتخابی شما موجود نیست"
+
+#~ msgid "You must select file"
+#~ msgstr "شما باید یک فایل انتخاب کنید"
+
+#~ msgid "All changes in file saved successfully."
+#~ msgstr "همه تغییرات در فایل با موفقیت ذخیره شد"
+
+#~ msgid "Edit file"
+#~ msgstr "ویرایش فایل"
+
+#~ msgid "Your attached file remove successfully"
+#~ msgstr "فایل پیوست شده شما با موفقیت حذف شد"
+
+#~ msgid "Please select file"
+#~ msgstr "لطفا یک فایل انتخاب کنید"
+
+#~ msgid "Go to filter"
+#~ msgstr "رفتن به فیلتر"
+
+#~ msgid "Not valid"
+#~ msgstr "صحیح نیست"
+
+#~ msgid "Not set"
+#~ msgstr "تنظیم نشده"
+
+#~ msgid "Update order"
+#~ msgstr "به روز رسانی سفارش"
+
+#~ msgid "Update delivery"
+#~ msgstr "به روز رسانی تحویل"
+
+#~ msgid "Rebuild thie module links on sitemap module tabels"
+#~ msgstr ""
+#~ "شما می توانید همه مطالب درج شده را دوباره سازی کنید، بعد از دوباره سازی "
+#~ "همه اطلاعات قدیمی شما به روز می شود، و شما باید تاریخ شروع و آغاز مطالب "
+#~ "را برای دوباره سازی درج کنید"
+
+#~ msgid "Sitemap rebuild finished"
+#~ msgstr "دوباره سازی نقشه سایت تکمیل شد"
+
+#~ msgid "Rebuild sitemap links"
+#~ msgstr "دوباره سازی لینک های نقشه سایت"
+
+#~ msgid "Location data not saved."
+#~ msgstr "اطلاعات مکان ذخیره نشد"
+
+#~ msgid "Add a location"
+#~ msgstr "مکان جدید"
+
+#~ msgid "Delivery data saved successfully."
+#~ msgstr "اطلاعات روش تحویل با موفقیت ذخیره شد"
+
+#~ msgid "Delivery data not saved."
+#~ msgstr "اطلاعات روش تحویل ذخیره نشد"
+
+#~ msgid "Add a delivery"
+#~ msgstr "روش تحویل جدید"
+
+#~ msgid "This product deleted"
+#~ msgstr "این محصول حذف شد"
+
+#~ msgid "%s set recommended successfully"
+#~ msgstr "محصول %s پیشنهاد شده شد"
+
+#~ msgid "Error in set recommended for %s product"
+#~ msgstr "خطا در تنظیم پیشنهاد شده برای محصول %s"
+
+#~ msgid "Add Related"
+#~ msgstr "اضافه کردن مشابه"
+
+#~ msgid "OK Add"
+#~ msgstr "با موفقیت اضافه شد"
+
+#~ msgid "Error Add , It added before"
+#~ msgstr "خطا، این مورد قبلا اضافه شده است"
+
+#~ msgid "Error , Product and related is same"
+#~ msgstr "خطا، محصول و مشابه یکی هستند"
+
+#~ msgid "OK Remove"
+#~ msgstr "با موفقیت حذف شد"
+
+#~ msgid "Add Attribute"
+#~ msgstr "اضافه کردن خواص محصول"
+
+#~ msgid "This option ready on next version"
+#~ msgstr "این گزینه در نسخه بعدی آماده می شود"
+
+#~ msgid "Extra field data saved successfully."
+#~ msgstr "اطلاعات فیلد اضافی با موفقیت ذخیره شد"
+
+#~ msgid "Extra field data not saved."
+#~ msgstr "اطلاعات فیلد اضافه ذخیره نشد"
+
+#~ msgid "Add Extra"
+#~ msgstr "فیلد جدید"
+
+#~ msgid "Selected field delete"
+#~ msgstr "فیلد انتخابی حذف شد"
+
+#~ msgid "Please select field"
+#~ msgstr "لطفا یک فیلد انتخاب کنید"
+
+#~ msgid "Special data saved successfully."
+#~ msgstr "اطلاعات محولات ویژه با موفقیت ذخیره شد"
+
+#~ msgid "Special data not saved."
+#~ msgstr "اطلاعات محصول ویژه ذخیره نشد"
+
+#~ msgid "Selected special delete"
+#~ msgstr "محصول ویژه انتخاب شده حذف شد"
+
+#~ msgid "Please select special"
+#~ msgstr "لطفا یک محصول ویژه انتخاب کنید"
+
+#~ msgid "Select product for manage review."
+#~ msgstr "انتخاب محصول برای مدیریت بررسی ها تخصصی"
+
+#~ msgid "Review data saved successfully."
+#~ msgstr "بررسی تخصصی با موفقیت اضافه شد"
+
+#~ msgid "Shop feed"
+#~ msgstr "خوراک فروشگاه"
+
+#~ msgid "Recent products."
+#~ msgstr "آخرین محصولات اضافه شده"
+
+#~ msgid "Official review"
+#~ msgstr "بررسی تخصصی رسمی"
+
+#~ msgid "User review"
+#~ msgstr "بررسی تخصصی کاربران"
+
+#~ msgid "By"
+#~ msgstr "به وسیله"
+
+#~ msgid "On"
+#~ msgstr "در"
+
+#~ msgid "Add review"
+#~ msgstr "درج بررسی تخصصی"
+
+#~ msgid "List of prodcuts on cart"
+#~ msgstr "فهرست محصولات انتخابی در سب خرید"
+
+#~ msgid "Discount"
+#~ msgstr "تخفیف"
+
+#~ msgid "Remove"
+#~ msgstr "حذف"
+
+#~ msgid "Back to Shoping"
+#~ msgstr "ادامه خرید"
+
+#~ msgid "Refresh cart"
+#~ msgstr "به روز کردن"
+
+#~ msgid "Empty cart"
+#~ msgstr "خالی کردن"
+
+#~ msgid "Pre Invoice"
+#~ msgstr "پیش فاکتور"
+
+#~ msgid "Total Price"
+#~ msgstr "قیمت کل"
+
+#~ msgid "Total Discount"
+#~ msgstr "تخفیف کل"
+
+#~ msgid "Total Number"
+#~ msgstr "تعداد کل"
+
+#~ msgid "Total Shipping"
+#~ msgstr "هزینه ارسال کل"
+
+#~ msgid "Final Price"
+#~ msgstr "قیمت نهایی"
+
+#~ msgid "Are you sure to delete this product from your cart? "
+#~ msgstr "آیا اطمینان دارید که میخواهید این محصول را از سبد خرید حذف کنید؟"
+
+#~ msgid "View"
+#~ msgstr "نمایش"
+
+#~ msgid "Out of stock"
+#~ msgstr "نا موجود"
+
+#~ msgid "Stock status"
+#~ msgstr "وضعیت"
+
+#~ msgid "In stock"
+#~ msgstr "موجود"
+
+#~ msgid "Add To cart"
+#~ msgstr "خرید"
+
+#~ msgid "Attached archives"
+#~ msgstr "آرشیو های پیوست شده"
+
+#~ msgid "Attached docs"
+#~ msgstr "پرونده های پیوست شده"
+
+#~ msgid "Attached pdfs"
+#~ msgstr "پی دی اف های پیوست شده"
+
+#~ msgid "Attached files"
+#~ msgstr "فایل های پیوست شده"
+
+#~ msgid "Category list"
+#~ msgstr "فهرست شاخه ها"
+
+#~ msgid "Finish order payment"
+#~ msgstr "تکمیل پرداخت سفارش"
+
+#~ msgid ""
+#~ "You pay your order at <strong>%s</strong> by <strong>%s</strong> gateway "
+#~ "And your order id is <strong>%s</strong>"
+#~ msgstr ""
+#~ "شما سفارش خود را در تاریخ <strong>%s</strong> با استفاده از درگاه پرداخت "
+#~ "<strong>%s</strong> ثبت و پرداخت کرده اید و شماره سفارش شما <strong>%s</"
+#~ "strong> می باشد"
+
+#~ msgid "Order link"
+#~ msgstr "لینک سفارش"
+
+#~ msgid "User panel"
+#~ msgstr "پنل سفارشات"
+
+#~ msgid "Shop index"
+#~ msgstr "صفحه اول فروشگاه"
+
+#~ msgid "Tag list"
+#~ msgstr "فهرست برچسب ها"
+
+#~ msgid "Order Name"
+#~ msgstr "نام سفارش دهنده"
+
+#~ msgid "Related Products"
+#~ msgstr "محصولات مشابه"
+
+#~ msgid "Price : "
+#~ msgstr "قیمت : "
+
+#~ msgid "Time : "
+#~ msgstr "زمان : "
+
+#~ msgid "Days"
+#~ msgstr "روز"
+
+#~ msgid "Finished"
+#~ msgstr "تمام شده"
+
+#~ msgid "Customer"
+#~ msgstr "مشتری"
+
+#~ msgid "Time"
+#~ msgstr "زمان"
+
+#~ msgid "Finish"
+#~ msgstr "پایان"
+
+#~ msgid "Method"
+#~ msgstr "روش"
+
+#~ msgid "Shipping"
+#~ msgstr "فروش"
+
+#~ msgid "Products"
+#~ msgstr "محصولات"
+
+#~ msgid "Current Price"
+#~ msgstr "قیمت فعلی"
+
+#~ msgid "Order discount"
+#~ msgstr "تخفیف در سفارش"
+
+#~ msgid "Order number"
+#~ msgstr "تعداد سفارش"
+
+#~ msgid "Order total"
+#~ msgstr "مجموع قیمت سفارش"
+
+#~ msgid "List of attached files"
+#~ msgstr "فهرست تمام فایل های پیوست شده"
+
+#~ msgid "Preview"
+#~ msgstr "پیش نمایش"
+
+#~ msgid "Information"
+#~ msgstr "اطلاعات"
+
+#~ msgid "create"
+#~ msgstr "ایجاد"
+
+#~ msgid "Get"
+#~ msgstr "دریافت"
+
+#~ msgid "Edit from product"
+#~ msgstr "ویرایش از محصول"
+
+#~ msgid "Add Delivery methods"
+#~ msgstr " روش تحویل جدید"
+
+#~ msgid "List of Delivery methods"
+#~ msgstr "فهرست روش های تحویل"
+
+#~ msgid "List of specials"
+#~ msgstr "فهرست محصولات ویژه"
+
+#~ msgid "Publish"
+#~ msgstr "منتشر شده"
+
+#~ msgid "Expire"
+#~ msgstr "باطی شده"
+
+#~ msgid "List of user logs"
+#~ msgstr "فهرست گزارش فعالیت مدیران"
+
+#~ msgid "User"
+#~ msgstr "کاربر"
+
+#~ msgid "Ip"
+#~ msgstr "آی پی"
+
+#~ msgid "Section"
+#~ msgstr "بخش"
+
+#~ msgid "Item"
+#~ msgstr "آیتم"
+
+#~ msgid "Operation"
+#~ msgstr "عملکرد"
+
+#~ msgid "Reviews from %s"
+#~ msgstr "بررسی های تخصصی از %s"
+
+#~ msgid "Add official review"
+#~ msgstr "بررسی تخصصی رسمی جدید"
+
+#~ msgid "Official Review"
+#~ msgstr "بررسی تخصصی رسمی"
+
+#~ msgid "Active"
+#~ msgstr "فعال"
+
+#~ msgid "Inactive"
+#~ msgstr "غیرفعال"
+
+#~ msgid "Close"
+#~ msgstr "بستن"
+
+#~ msgid "All Reviews"
+#~ msgstr "همه بررسی های تخصصی"
+
+#~ msgid "List"
+#~ msgstr "فهرست"
+
+#~ msgid "Attributes"
+#~ msgstr "خواص"
+
+#~ msgid "Extra"
+#~ msgstr "فیلد اضافی"
+
+#~ msgid "Special"
+#~ msgstr "ویژه"
+
+#~ msgid "Back"
+#~ msgstr "برگشت"
+
+#~ msgid "Get it"
+#~ msgstr "دریافت"
+
+#~ msgid "Product title"
+#~ msgstr "عنوان محصول"
+
+#~ msgid "Code"
+#~ msgstr "کد"
+
+#~ msgid "Details"
+#~ msgstr "جزئیات"
+
+#~ msgid "Time create"
+#~ msgstr "زمان ایجاد"
+
+#~ msgid "Time finish"
+#~ msgstr "زمان اتمام"
+
+#~ msgid "Print"
+#~ msgstr "پرینت"
+
+#~ msgid "Hits"
+#~ msgstr "تاریخ"
+
+#~ msgid "Size"
+#~ msgstr "اندازه"
+
+#~ msgid "In process"
+#~ msgstr "در حال پردازش"
+
+#~ msgid "Sitemap"
+#~ msgstr "نقشه سایت"
+
+#~ msgid "How this part work?"
+#~ msgstr "این بخش چگونه کار می کند؟"
+
+#~ msgid ""
+#~ "Tools system, help you to manage your module, Update database and remove "
+#~ "unused information"
+#~ msgstr ""
+#~ "ابزار ها، به شما برای مدیریت ماژول کمک میکند، با به روز رسانی پایگاه داده "
+#~ "ها و حذف اطلاعات قدیمی. در این مقطع ابزار های زیر در دسترس شما است"
+
+#~ msgid "Manage links on sitemap module"
+#~ msgstr "مدیریت لینک ها در ماژول نقشه سایت"
+
+#~ msgid "This review added by %s"
+#~ msgstr "این بررسی تخصصی به وسیله %s اضافه شده است"
+
+#~ msgid "Add Location"
+#~ msgstr "مکان جدید"
+
+#~ msgid "List of Location"
+#~ msgstr "فهرست مکان ها"
+
+#~ msgid "All pending review"
+#~ msgstr "همه بررسی های در انتظار تایید"
+
+#~ msgid "Manage checkout options"
+#~ msgstr "مدیریت گزینه های سفارش"
+
+#~ msgid ""
+#~ "On this part, you can manage checkout options, select payment method and "
+#~ "add user location and delivery system, For manage this levels and options "
+#~ "you can check and manage this parts"
+#~ msgstr ""
+#~ "در این قسمت شما میتوانید گزینه های سفارش را مدیریت کنید، روش های پرداخت "
+#~ "را انتخاب کنید و براساس آن مکان کاربر و روش تحویل را ایجاد کنید. برای "
+#~ "مدیریت گزینه ها شما میتوانید قسمت های زیر را ویرایش کنید"
+
+#~ msgid "Check order settings on module configurations"
+#~ msgstr "بررسی تنظیمات سفارش گرفتن در ویژگی های ماژول"
+
+#~ msgid "Add delivery methods and select payment options for each method"
+#~ msgstr "اضافه کردن روش تحویل و انتخاب روش پرداخت برای هر روش تحویل"
+
+#~ msgid "Add locations and set delivery methods for each location"
+#~ msgstr "اضافه کردن محل و انتخابروش تحویل برای هر محل"
+
+#~ msgid "Index"
+#~ msgstr "مقدمه"
+
+#~ msgid ""
+#~ "You can manage product related here, remove related productes or find new "
+#~ "product by search system and add them to related"
+#~ msgstr ""
+#~ "شما میتوانید محصولات مشابه را در اینجا مدیریت کنید، محصولات مشابه را حذف "
+#~ "کنید و یا محصولات جدید برای درج به عنوان محصول مشابه جستجو کنید"
+
+#~ msgid "List of related products"
+#~ msgstr "فهرست محصولات مشابه"
+
+#~ msgid "Add"
+#~ msgstr "اضافه کردن"
+
+#~ msgid "Search form"
+#~ msgstr "فرم جستجو"
+
+#~ msgid "Related product in process"
+#~ msgstr "در حال پردازش محصولات مشابه"
+
+#~ msgid "Attach"
+#~ msgstr "پیوست"
+
+#~ msgid "Related"
+#~ msgstr "مشابه"
+
+#~ msgid "Recommended in process"
+#~ msgstr "تنظیم به صورت پیشنهاد شده در حال انجام است"
+
+#~ msgid "No file attached"
+#~ msgstr "هیچ فایلی پیوست نشده است"
+
+#~ msgid "Logs"
+#~ msgstr "گزارشات"
+
+#~ msgid "Shop"
+#~ msgstr "فروشگاه"
+
+#~ msgid "Shop module for pi."
+#~ msgstr "سیستم فروشگاه"
+
+#~ msgid "Admin"
+#~ msgstr "مدیریت"
+
+#~ msgid "Social"
+#~ msgstr "شبکه های اجتماعی"
+
+#~ msgid "File"
+#~ msgstr "فایل"
+
+#~ msgid "Vote"
+#~ msgstr "رای"
+
+#~ msgid "Favourite"
+#~ msgstr "مورد علاقه"
+
+#~ msgid "Texts"
+#~ msgstr "متن ها"
+
+#~ msgid "Perpage"
+#~ msgstr "تعداد در هر صفحه"
+
+#~ msgid "Show related products"
+#~ msgstr "نمایش محصولات مشابه"
+
+#~ msgid "Show extra fields"
+#~ msgstr "نمایش فیلد های اضافی"
+
+#~ msgid "Show product attacehed files"
+#~ msgstr "نمایش فایل های پیوست شده"
+
+#~ msgid "Show product price"
+#~ msgstr "نمایش قیمت محصول"
+
+#~ msgid "Show official review"
+#~ msgstr "نمایش بررسی تخصصی رسمی"
+
+#~ msgid "Show user review"
+#~ msgstr "نمایش بررسی تخصصی کاربران"
+
+#~ msgid "Show submit review"
+#~ msgstr "نمایش دکمه ارسال بررسی تخصصی"
+
+#~ msgid "Show special"
+#~ msgstr "نمایش محصولات ویژه"
+
+#~ msgid "Number of products on special"
+#~ msgstr "تعداد محصولات ویژه"
+
+#~ msgid "Volume"
+#~ msgstr "حجم"
+
+#~ msgid "Show stock count"
+#~ msgstr "نمایش تعداد موجودی"
+
+#~ msgid "Show Tags"
+#~ msgstr "نمایش برچسب ها"
+
+#~ msgid "Image Size"
+#~ msgstr "حجم تصویر"
+
+#~ msgid "Image path"
+#~ msgstr "مسیر ذخیره تصویر"
+
+#~ msgid "Image Extension"
+#~ msgstr "پسوند های مجار برای تصویر"
+
+#~ msgid "Large Image height"
+#~ msgstr "ارتفاع تصویر بزرگ"
+
+#~ msgid "Large Image width"
+#~ msgstr "عرض تصویر بزرگ"
+
+#~ msgid "Medium Image height"
+#~ msgstr "ارتفاع تصویر متوسط"
+
+#~ msgid "Medium Image width"
+#~ msgstr "عرض تصویر متوسط"
+
+#~ msgid "Thumb Image height"
+#~ msgstr "ارتفاع تصویر بندانگشتی"
+
+#~ msgid "Thumb Image width"
+#~ msgstr "عرض تصویر بندانگشتی"
+
+#~ msgid "Use lightbox"
+#~ msgstr "استفاده از لایت باکس"
+
+#~ msgid "Add Watermark"
+#~ msgstr "اضافه کردن واترمارک به تصویر"
+
+#~ msgid "Watermark Image"
+#~ msgstr "تصویر واترمارک"
+
+#~ msgid "Watermark Positio"
+#~ msgstr "موقعیت واترمارک"
+
+#~ msgid "Top Left"
+#~ msgstr "بالا چپ"
+
+#~ msgid "Top Right"
+#~ msgstr "بالا راست"
+
+#~ msgid "Bottom Left"
+#~ msgstr "پایین چپ"
+
+#~ msgid "Bottom Right"
+#~ msgstr "پایین راست"
+
+#~ msgid "Show Google Plus"
+#~ msgstr "نمایش گوگل پلاس"
+
+#~ msgid "Show facebook"
+#~ msgstr "نمایش فیسبوک"
+
+#~ msgid "Show Twitter"
+#~ msgstr "نمایش تویتر"
+
+#~ msgid "File Size"
+#~ msgstr "حجم فایل"
+
+#~ msgid "File path"
+#~ msgstr "مسیر ذخیره فایل"
+
+#~ msgid "File Extension"
+#~ msgstr "پسوند های مجار برای فایل"
+
+#~ msgid "Use vote system"
+#~ msgstr "استفاده از سیستم رای"
+
+#~ msgid "Use favourite system"
+#~ msgstr "استفاده از سیستم مورد علاقه"
+
+#~ msgid "Show search type"
+#~ msgstr "نمایش نوع جستجوی عنوان"
+
+#~ msgid "Show search price"
+#~ msgstr "نمایش قیمت در جستجو"
+
+#~ msgid "Show search category"
+#~ msgstr "نمایش شاخه در جستجو"
+
+#~ msgid "Order method"
+#~ msgstr "روش سفارش"
+
+#~ msgid "Both"
+#~ msgstr "هر دو"
+
+#~ msgid "Code Prefix"
+#~ msgstr "پیشوند کد"
+
+#~ msgid "List of mails for send order notification"
+#~ msgstr "فهرست ایمیل هایی که آگاهی رسانی ثبت سفارش به آنها انجام شود"
+
+#~ msgid "Use `|` as delimiter to separate mails"
+#~ msgstr "از `|` برای جداسازی ایمیل های استفاده کنید"
+
+#~ msgid "Show name"
+#~ msgstr "نمایش نام"
+
+#~ msgid "Show email"
+#~ msgstr "نمایش ایمیل"
+
+#~ msgid "Show phone"
+#~ msgstr "نمایش تلفن"
+
+#~ msgid "Show mobile"
+#~ msgstr "نمایش موبایل"
+
+#~ msgid "Show company"
+#~ msgstr "نمایش شرکت"
+
+#~ msgid "Show address"
+#~ msgstr "نمایش آدرس"
+
+#~ msgid "Show country"
+#~ msgstr "نمایش کشور"
+
+#~ msgid "Show city"
+#~ msgstr "نمایش شهر"
+
+#~ msgid "Show Zip code"
+#~ msgstr "نمایش کد پستی"
+
+#~ msgid "Show packing"
+#~ msgstr "نمایش بسته بندی"
+
+#~ msgid "Show location"
+#~ msgstr "انتخاب محل"
+
+#~ msgid "Show delivery"
+#~ msgstr "انتخاب روش تحویل"
+
+#~ msgid "Show payment"
+#~ msgstr "انتخاب روش پرداخت"
+
+#~ msgid "Module main title"
+#~ msgstr "عنوان اصلی ماژول"
+
+#~ msgid "Title for main page and all non-title pages"
+#~ msgstr "عنوان برای صفحه اصلی و تمام صفحات بدون عنوان"
+
+#~ msgid "Module main description"
+#~ msgstr "توضیحات اصلی ماژول"
+
+#~ msgid "Module main keywords"
+#~ msgstr "کلمات کلیدی اصلی ماژول"
+
+#~ msgid "Module search page title"
+#~ msgstr "عنوان صفحه جستجو ماژول"
+
+#~ msgid "Module search page description"
+#~ msgstr "توضیحات صفحه جستجو ماژول"
+
+#~ msgid "Module search page keywords"
+#~ msgstr "کلمات کلیدی صفحه جستجو ماژول"
+
+#~ msgid "Attached video"
+#~ msgstr "ویدیو های پیوست شده"
+
+#~ msgid "Attached audio"
+#~ msgstr "صدا های پیوست شده"
+
+#~ msgid "Attached images"
+#~ msgstr "تصاویر پیوست شده"
+
+#~ msgid "Show price"
+#~ msgstr "نمایش قیمت"
+
+#~ msgid "Show More link to module page"
+#~ msgstr "نمایش لینک ادامه به صفحه ماژول"
+
+#~ msgid "Set More link to module page"
+#~ msgstr "درج لینک ادامه به صفحه ماژول"
+
+#~ msgid "Simple list"
+#~ msgstr "فهرست ساده"
+
+#~ msgid "Advanced list"
+#~ msgstr "فهرست کامل"

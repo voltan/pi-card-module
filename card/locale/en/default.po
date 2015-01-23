@@ -1,0 +1,451 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: card\n"
+"POT-Creation-Date: 2015-01-23 09:17+0330\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: /var/www/html/local/pi/pi-release-2.5.0/usr/module/"
+"card\n"
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/DetailEditForm.php:55
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:87
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:94
+msgid "Status"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/DetailEditForm.php:57
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:89
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:96
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:36
+msgid "Published"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/DetailEditForm.php:58
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:90
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:97
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:37
+msgid "Pending review"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/DetailEditForm.php:59
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:91
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:98
+msgid "Draft"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/DetailEditForm.php:60
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:92
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:99
+msgid "Private"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/DetailEditForm.php:61
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:93
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:100
+msgid "Delete"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/DetailEditForm.php:200
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/DetailForm.php:178
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:186
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:354
+msgid "Submit"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:43
+msgid "First Name"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:55
+msgid "Last name"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:69
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-finish.phtml:53
+msgid "Email"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:83
+msgid "Phone"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:96
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-finish.phtml:56
+msgid "Mobile"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:110
+msgid "Company"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:123
+msgid "Address"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:139
+msgid "Country"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:153
+msgid "City"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:167
+msgid "Zip code"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:181
+msgid "Adapter"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/OrderForm.php:192
+msgid "Confirm and pay"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:52
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:58
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:10
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/category-index.phtml:10
+msgid "Title"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:63
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:69
+msgid "slug"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:74
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:81
+msgid "Description"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:113
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:129
+msgid "Remove image"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:129
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:145
+msgid "Image"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:142
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:190
+msgid "SEO options"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:149
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:197
+msgid "SEO Title"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:161
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:209
+msgid "SEO Keywords"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/CategoryForm.php:173
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:221
+msgid "SEO Description"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:44
+msgid "General options"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:109
+msgid "Category"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:158
+msgid "Price options"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:165
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-add.phtml:16
+msgid "Price"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:177
+msgid "Price title"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:235
+msgid "Fields options"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:242
+msgid "Field 1 title"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:253
+msgid "Field 2 title"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:264
+msgid "Field 3 title"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:275
+msgid "Field 4 title"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:286
+msgid "Field 5 title"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:297
+msgid "Field 6 title"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:308
+msgid "Field 7 title"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:319
+msgid "Field 8 title"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:330
+msgid "Field 9 title"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/ProductForm.php:341
+msgid "Field 10 title"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Form/Element/Gateway.php:30
+msgid "Offline"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Front/CheckoutController.php:41
+msgid "The product not found."
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Front/CheckoutController.php:125
+msgid "Order not set 1."
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Front/CheckoutController.php:129
+msgid "Order not set 2."
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Front/CheckoutController.php:133
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Front/CheckoutController.php:138
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Front/CheckoutController.php:143
+msgid "It not your order."
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Front/CheckoutController.php:147
+msgid "This order not pay"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Front/CheckoutController.php:152
+msgid "This is old order and you pay it before"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:47
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:106
+msgid "Please select product."
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:54
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:113
+msgid "Your product have error."
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:71
+msgid "Yes"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:71
+msgid "No"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:95
+#, php-format
+msgid "List of detail on %s"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:186
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:283
+msgid "Information data saved successfully."
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:189
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:286
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/ProductController.php:206
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/CategoryController.php:195
+msgid "Invalid data, please check and re-submit."
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:196
+#, php-format
+msgid "Add detail to %s"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:207
+msgid "Please select product and detail."
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:216
+msgid "Your product or detail have error."
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/DetailController.php:296
+#, php-format
+msgid "Edit detail to %s"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/ProductController.php:151
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/CategoryController.php:142
+msgid "Problem in upload image. please try again"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/ProductController.php:203
+msgid "Product data saved successfully."
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/ProductController.php:217
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:4
+msgid "Add product"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/ProductController.php:241
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/CategoryController.php:229
+#, php-format
+msgid "Image of %s removed"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/ProductController.php:244
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/CategoryController.php:232
+msgid "Image not remove"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/ProductController.php:248
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-index.phtml:4
+msgid "Please select product"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/CategoryController.php:192
+msgid "Category data saved successfully."
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/CategoryController.php:205
+msgid "Add category"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/src/Controller/Admin/CategoryController.php:236
+msgid "Please select category"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-add.phtml:8
+msgid "Basket"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-add.phtml:19
+msgid "Number"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-add.phtml:22
+msgid "Total"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-finish.phtml:3
+msgid "Order details"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-finish.phtml:42
+msgid "Product and order"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-finish.phtml:50
+msgid "Name"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-finish.phtml:59
+msgid "Paid price"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/front/checkout-finish.phtml:62
+msgid "Time payment"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-view.phtml:6
+msgid "You dont add any details for this products"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-view.phtml:11
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:9
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/category-index.phtml:9
+msgid "ID"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-view.phtml:12
+msgid "Create time"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-view.phtml:13
+msgid "Is sales"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-view.phtml:14
+msgid "Sales time"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-view.phtml:15
+msgid "Sales price"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-view.phtml:16
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:11
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/category-index.phtml:11
+msgid "Action"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/detail-view.phtml:26
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:27
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/category-index.phtml:25
+msgid "Edit"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/category-update.phtml:16
+msgid "Remove image category in process"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-update.phtml:16
+msgid "Remove image product in process"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:6
+msgid "List of product"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:28
+msgid "View detail"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:29
+msgid "Add detail"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/product-index.phtml:38
+msgid "Trash"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/category-index.phtml:4
+msgid "Add Category"
+msgstr ""
+
+#: /var/www/html/local/pi/pi-release-2.5.0/usr/module/card/template/admin/category-index.phtml:6
+msgid "List of Categores"
+msgstr ""
